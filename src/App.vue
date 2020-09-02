@@ -15,7 +15,6 @@ export default {
 </script>
 
 <style lang="scss">
-// styles go here
 #app {
   height: 2000px;
 }

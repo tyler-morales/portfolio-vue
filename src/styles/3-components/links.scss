@@ -1,0 +1,20 @@
+.link {
+  cursor: pointer;
+  width: max-content;
+
+  &--view-project {
+    @extend .link;
+    color: $color-link;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+
+    .icon {
+      margin-left: 5px;
+    }
+  }
+
+  &--learn-more {
+    color: $color-link;
+  }
+}

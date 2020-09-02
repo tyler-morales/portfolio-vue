@@ -53,12 +53,10 @@ export default {
 
 <style lang="scss" scoped>
 .nav.hidden-navbar {
-  box-shadow: none;
   transform: translate3d(0, -100%, 0);
 }
 .nav {
   transform: translate3d(0, 0, 0);
-  font-family: var(--font-main);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
