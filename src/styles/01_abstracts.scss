@@ -1,6 +1,13 @@
+$color-primary: #818181;
+$lighten: 10%;
+
 :root {
   //colors
+  --white: #fff;
+  --black: #242424;
+
   // fonts
+  --font-main: 'Roboto', sans-serif;
 }
 
 // mixins
