@@ -1,0 +1,22 @@
+body {
+  background-color: var(--bg-color);
+  font-family: var(--body-text);
+}
+
+input,
+button {
+  transition: all .2s;
+
+  &:focus {
+    outline: none;
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-base);
+    color: rgba(var(--color-text-black), 1);
+    background-color: #fff;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
