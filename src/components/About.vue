@@ -97,7 +97,7 @@ export default {
   @include breakpoint(sm) {
     columns: 1 auto;
     margin: 0;
-    padding: 0;
+    padding: 20px;
   }
 
   & > * {
