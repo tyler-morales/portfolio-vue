@@ -9,17 +9,31 @@
         :key="index"
       />
     </section>
+    <section class="notable-projects">
+      <h2>Notable Projects</h2>
+      <h4>Smaller Projects & Experiments</h4>
+      <div class="grid">
+        <NotableProject
+          :notableProject="project"
+          v-for="(project, index) in notableProjects"
+          :key="index"
+        />
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
 import Hero from '@/components/Hero'
 import CaseStudy from '@/components/CaseStudy'
+import NotableProject from '@/components/NotableProject'
+
 export default {
   name: 'Home',
   components: {
     Hero,
-    CaseStudy
+    CaseStudy,
+    NotableProject
   },
   data() {
     return {
@@ -38,6 +52,23 @@ export default {
           image: 'https://tmo.codes/images/iss_mockup-tab.png',
           tags: ['Leaflet.js', 'SCSS', 'ES6', 'Vue'],
           reverse: true
+        }
+      ],
+      notableProjects: [
+        {
+          title: 'Manifest Website',
+          image: 'https://tmo.codes/images/ecuador.jpg',
+          link: 'https://www.manifestledger.com/'
+        },
+        {
+          title: 'Manifest Website',
+          image: 'https://tmo.codes/images/tik-it.jpg',
+          link: 'https://www.manifestledger.com/'
+        },
+        {
+          title: 'Manifest Website',
+          image: 'https://tmo.codes/images/manifest_website.jpg',
+          link: 'https://www.manifestledger.com/'
         }
       ]
     }
@@ -66,6 +97,43 @@ export default {
 
     &--title {
       text-align: center;
+    }
+  }
+
+  .notable-projects {
+    justify-content: center;
+    background-color: var(--color-white);
+    margin: 100px;
+    padding: 100px;
+    text-align: center;
+
+    @include breakpoint(lg) {
+      margin: 50px;
+      padding: 50px;
+    }
+    @include breakpoint(md) {
+      margin: 50px;
+      padding: 50px;
+    }
+
+    @include breakpoint(sm) {
+      padding: 20px;
+      margin: 0;
+    }
+
+    .grid {
+      display: grid;
+      gap: 60px;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 100px;
+
+      @include breakpoint(sm) {
+        margin-top: 30px;
+      }
+
+      @include breakpoint(md) {
+        grid-template-columns: 1fr;
+      }
     }
   }
 }

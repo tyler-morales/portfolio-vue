@@ -1,0 +1,19 @@
+.icon {
+  color: currentColor;
+  transition: all .3s;
+
+  &--social {
+    @extend .icon;
+  }
+
+  &--external-link {
+    @extend .icon;
+    position: absolute;
+    top: 14px;
+    right: 35px;
+    top: 17px;
+    right: 17px;
+    color: $color-tertiary;
+    transition: all .3s;
+  }
+}
