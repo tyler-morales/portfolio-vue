@@ -46,11 +46,11 @@ export default {
           tags: ['HTML 5', 'SCSS', 'ES6']
         },
         {
-          type: 'Game',
-          title: 'Text Adventure Game',
-          description: 'A beautiful way to view a range of countdown timers',
+          type: 'Productivity Tool',
+          title: 'Random New Tab',
+          description: 'A beautiful New Tab Dashboard',
           image: 'https://tmo.codes/images/iss_mockup-tab.png',
-          tags: ['Leaflet.js', 'SCSS', 'ES6', 'Vue'],
+          tags: ['Unsplash API', 'SCSS', 'ES6', 'Vue'],
           reverse: true
         }
       ],
@@ -89,6 +89,8 @@ export default {
     margin-top: 200px;
     display: grid;
     gap: 150px;
+    padding: 100px 0;
+    background-color: var(--white);
 
     @include breakpoint(sm) {
       margin-top: 80px;
@@ -102,7 +104,7 @@ export default {
 
   .notable-projects {
     justify-content: center;
-    background-color: var(--color-white);
+    background-color: var(--white);
     margin: 100px;
     padding: 100px;
     text-align: center;
