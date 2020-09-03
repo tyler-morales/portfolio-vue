@@ -101,8 +101,8 @@ export default {
       }
 
       &--tag {
-        background-color: Rgba($color-tag / $lighten);
-        color: Rgb($color-tag);
+        background-color: Rgba($color-secondary / $lighten);
+        color: Rgb($color-secondary);
         padding: 8px 15px;
         border-radius: 15px;
       }

@@ -4,7 +4,7 @@
 
   &--view-project {
     @extend .link;
-    color: $color-link;
+    color: Rgb($color-secondary);
     font-size: 17px;
     display: flex;
     align-items: center;
@@ -15,6 +15,6 @@
   }
 
   &--learn-more {
-    color: $color-link;
+    color: Rgb($color-secondary);
   }
 }

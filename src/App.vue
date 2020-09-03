@@ -16,6 +16,5 @@ export default {
 
 <style lang="scss">
 #app {
-  height: 2000px;
 }
 </style>

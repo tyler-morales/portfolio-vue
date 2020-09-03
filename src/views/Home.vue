@@ -1,6 +1,9 @@
 <template>
   <div class="home">
+    <!-- HERO -->
     <Hero />
+
+    <!-- CASE STUDIES -->
     <section id="projects" class="case-studies">
       <h2 class="case-studies--title">Case Studies</h2>
       <CaseStudy
@@ -9,6 +12,8 @@
         :key="index"
       />
     </section>
+
+    <!-- NOTABLE PROJECTS -->
     <section class="notable-projects">
       <h2>Notable Projects</h2>
       <h4>Smaller Projects & Experiments</h4>
@@ -20,6 +25,17 @@
         />
       </div>
     </section>
+
+    <!-- FACTS -->
+    <section class="facts">
+      <Facts :fact="fact" v-for="(fact, index) in facts" :key="index" />
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <h2 class="about--title">About Me</h2>
+      <About :about="about" />
+    </section>
   </div>
 </template>
 
@@ -27,13 +43,17 @@
 import Hero from '@/components/Hero'
 import CaseStudy from '@/components/CaseStudy'
 import NotableProject from '@/components/NotableProject'
+import Facts from '@/components/Facts'
+import About from '@/components/About'
 
 export default {
   name: 'Home',
   components: {
     Hero,
     CaseStudy,
-    NotableProject
+    NotableProject,
+    Facts,
+    About
   },
   data() {
     return {
@@ -70,7 +90,52 @@ export default {
           image: 'https://tmo.codes/images/manifest_website.jpg',
           link: 'https://www.manifestledger.com/'
         }
-      ]
+      ],
+      facts: [
+        {
+          title: 'Designer & Developer',
+          description:
+            'Look no further for someone to design and build your ideas',
+          tags: ['Adobe CC', 'Figma', 'Graphic Design'],
+          image: 'https://tmo.codes/icons/unicorn.png'
+        },
+        {
+          title: 'Cutting Edge Tech',
+          description: 'Always learning the latest updates & technologies',
+          tags: ['HTML', 'CSS/SCSS', 'HUGO', 'ES6'],
+          image: 'https://tmo.codes/icons/computer.png'
+        },
+        {
+          title: 'Strategic Thinker',
+          description: 'Each stage is meticulously planned and deliberate',
+          tags: ['Research', 'Design', 'Development'],
+          image: 'https://tmo.codes/icons/atom.png'
+        }
+      ],
+      about: {
+        title: 'Hello, World 🌎!',
+        subTitle: 'I’m a front end develop from Chicago',
+        image: 'https://tmo.codes/images/profile.png',
+        bio: `Ever since a young age, I’ve been interested intechnology and design. From growing up with the internet, building countless projects and constantly having an urge to create anything, purposeful design has been important to me. Ultimately, this fascination with creativity and design has led me to find web development the perfect landscape to extend mypassion towards building interactive and intuitive web experiences.
+
+Along with development, I am very active in the developer community online and in local Chicago Meetups. IN, amongst others, build up and motivate other like minded individuals, document our progress and learn the latest technologies with developers globally! Currently, I am studying Web Development and Design at Columbia College Chicago.`,
+        dev: [
+          'HTML',
+          'CSS/SCSS',
+          'JS (ES6)',
+          'HUGO',
+          'Git/ Github',
+          'CLI',
+          "API's"
+        ],
+        design: [
+          'Adobe CC Suite',
+          'Prototyping',
+          'Mockups',
+          'Art Direction',
+          'Photography'
+        ]
+      }
     }
   }
 }
@@ -136,6 +201,30 @@ export default {
       @include breakpoint(md) {
         grid-template-columns: 1fr;
       }
+    }
+  }
+
+  .facts {
+    display: grid;
+    gap: 100px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+    @include breakpoint(md) {
+      grid-template-columns: 1fr;
+      gap: 50px;
+    }
+
+    @include breakpoint(sm) {
+      background-color: #fff;
+    }
+  }
+
+  .about {
+    &--title {
+      text-align: center;
     }
   }
 }

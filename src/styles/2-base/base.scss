@@ -1,6 +1,10 @@
 body {
   background-color: var(--bg-color);
   font-family: var(--font-main);
+
+  @include breakpoint(md) {
+    background-color: var(--white);
+  }
 }
 
 input,
@@ -12,7 +16,7 @@ button {
     transform: translateY(-3px);
     box-shadow: var(--shadow-base);
     color: rgba(var(--color-text-black), 1);
-    background-color: #fff;
+    background-color: var(--white);
   }
 }
 

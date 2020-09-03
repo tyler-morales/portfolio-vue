@@ -63,7 +63,7 @@ export default {
   padding: 12px 0;
   color: var(--white);
   position: fixed;
-  background-color: $color-primary;
+  background-color: Rgb($color-primary);
   font-size: 14px;
   transition: all 0.3s;
   z-index: 11;
