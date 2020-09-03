@@ -1,15 +1,47 @@
 <template>
   <div class="home">
     <Hero />
+    <section id="projects" class="case-studies">
+      <h2 class="case-studies--title">Case Studies</h2>
+      <CaseStudy
+        :caseStudy="caseStudy"
+        v-for="(caseStudy, index) in caseStudies"
+        :key="index"
+      />
+    </section>
   </div>
 </template>
 
 <script>
 import Hero from '@/components/Hero'
+import CaseStudy from '@/components/CaseStudy'
 export default {
   name: 'Home',
   components: {
-    Hero
+    Hero,
+    CaseStudy
+  },
+  data() {
+    return {
+      caseStudies: [
+        {
+          type: 'Web App',
+          title: 'Countdown Timer',
+          description: 'A beautiful way to view a range of countdown timers',
+          image: 'https://tmo.codes/images/game-laptop-l.png',
+          tags: ['HTML 5', 'SCSS', 'ES6'],
+          reverse: false
+        },
+        {
+          type: 'Game',
+          title: 'Text Adventure Game',
+          description: 'A beautiful way to view a range of countdown timers',
+          image: 'https://tmo.codes/images/iss_mockup-tab.png',
+          tags: ['HTML 5', 'SCSS', 'ES6'],
+          reverse: true
+        }
+      ]
+    }
   }
 }
 </script>
@@ -20,6 +52,16 @@ export default {
 
   @include breakpoint(sm) {
     padding-top: 75px;
+  }
+
+  .case-studies {
+    margin-top: 200px;
+    display: grid;
+    gap: 150px;
+
+    &--title {
+      text-align: center;
+    }
   }
 }
 </style>

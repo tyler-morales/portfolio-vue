@@ -2,6 +2,7 @@ $color-primary: #414141;
 $color-tertiary: #66bb6a;
 $color-link: #3210f1;
 $lighten: 10%;
+$color-tag: 29 4 247;
 
 :root {
   //colors
@@ -18,19 +19,27 @@ $lighten: 10%;
     @media (max-width: 500px) {
       @content;
     }
-  } @else if $class==sm {
+  }
+
+  @else if $class==sm {
     @media (max-width: 600px) {
       @content;
     }
-  } @else if $class==md {
+  }
+
+  @else if $class==md {
     @media (max-width: 992px) {
       @content;
     }
-  } @else if $class==lg {
+  }
+
+  @else if $class==lg {
     @media (max-width: 1200px) {
       @content;
     }
-  } @else {
+  }
+
+  @else {
     @warn "Breakpoint mixin supports: xs, sm, md, lg";
   }
 }
