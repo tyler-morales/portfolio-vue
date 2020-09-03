@@ -116,9 +116,10 @@ export default {
         title: 'Hello, World 🌎!',
         subTitle: 'I’m a front end develop from Chicago',
         image: 'https://tmo.codes/images/profile.png',
-        bio: `Ever since a young age, I’ve been interested intechnology and design. From growing up with the internet, building countless projects and constantly having an urge to create anything, purposeful design has been important to me. Ultimately, this fascination with creativity and design has led me to find web development the perfect landscape to extend mypassion towards building interactive and intuitive web experiences.
-
-Along with development, I am very active in the developer community online and in local Chicago Meetups. IN, amongst others, build up and motivate other like minded individuals, document our progress and learn the latest technologies with developers globally! Currently, I am studying Web Development and Design at Columbia College Chicago.`,
+        bio: [
+          `Ever since a young age, I’ve been interested intechnology and design. From growing up with the internet, building countless projects and constantly having an urge to create anything, purposeful design has been important to me. Ultimately, this fascination with creativity and design has led me to find web development the perfect landscape to extend mypassion towards building interactive and intuitive web experiences.`,
+          `Along with development, I am very active in the developer community online and in local Chicago Meetups. IN, amongst others, build up and motivate other like minded individuals, document our progress and learn the latest technologies with developers globally! Currently, I am studying Web Development and Design at Columbia College Chicago.`
+        ],
         dev: [
           'HTML',
           'CSS/SCSS',
@@ -144,6 +145,11 @@ Along with development, I am very active in the developer community online and i
 <style lang="scss" scoped>
 .home {
   padding-top: 150px;
+
+  @include breakpoint(md) {
+    padding: 50px;
+    padding-top: 75px;
+  }
 
   @include breakpoint(sm) {
     padding: 20px;
@@ -223,6 +229,8 @@ Along with development, I am very active in the developer community online and i
   }
 
   .about {
+    margin-top: 100px;
+
     &--title {
       text-align: center;
     }

@@ -5,7 +5,7 @@
         <span class="title">Tyler Morales</span>
         <span class="sub-title">Front End Developer</span>
       </router-link>
-      <router-link to="/about" class="nav__about">About</router-link>
+      <a href="#about" class="nav__about">About</a>
       <router-link to="/projects" class="nav__projects">Projects</router-link>
     </div>
   </nav>

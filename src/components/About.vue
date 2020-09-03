@@ -2,13 +2,13 @@
   <div class="grid">
     <div class="grid__img">
       <h2>{{ about.title }}</h2>
-      <h4>{{ about.subTitle }}</h4>
-      <img class="u-mt" :src="about.image" alt="" />
+      <p class="sub-title">{{ about.subTitle }}</p>
+      <img :src="about.image" alt="" />
     </div>
 
     <div class="grid__skills">
       <h2>Skills</h2>
-      <div class="u-mt">
+      <div>
         <h4>Development</h4>
         <ul class="grid__skills__list">
           <li v-for="(devSkill, index) in about.dev" :key="index">
@@ -16,7 +16,7 @@
           </li>
         </ul>
       </div>
-      <div class="u-mt">
+      <div>
         <h4>Design</h4>
         <ul class="grid__skills__list">
           <li v-for="(designSkill, index) in about.design" :key="index">
@@ -25,9 +25,13 @@
         </ul>
       </div>
     </div>
+
     <div class="grid__para">
-      <p>{{ about.bio }}</p>
+      <p>{{ about.bio[0] }}</p>
+      <br />
+      <p>{{ about.bio[1] }}</p>
     </div>
+
     <div class="grid__socials">
       <h2>Connect</h2>
       <div class="grid__socials__icons u-mt">
@@ -81,18 +85,19 @@ export default {
 .grid {
   columns: 2 auto;
   column-gap: 60px;
-  margin: 100px auto;
+  margin: 40px auto;
   max-width: 1200px;
-  padding: 20px;
+  padding: 50px;
 
   @include breakpoint(md) {
     columns: 1 auto;
-    margin: 50px;
+    padding: 20px;
   }
 
   @include breakpoint(sm) {
     columns: 1 auto;
     margin: 0;
+    padding: 0;
   }
 
   & > * {
@@ -105,8 +110,20 @@ export default {
     box-shadow: 4px 12px 40px 6px rgba(0, 0, 0, 0.04);
 
     @include breakpoint(sm) {
-      padding: 22px;
+      padding: 0;
       margin: 10px 0px;
+      background-color: inherit;
+      box-shadow: none;
+    }
+
+    h4 {
+      margin: 20px 0;
+      font-weight: 500;
+    }
+
+    .sub-title {
+      line-height: 24px;
+      margin: 20px 0;
     }
   }
 
@@ -115,6 +132,7 @@ export default {
   }
 
   &__para {
+    margin: 40px 0;
   }
 
   &__skills {
@@ -124,7 +142,6 @@ export default {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      margin-top: 25px;
 
       & > *:not(:last-child) {
         margin-right: 20px;
@@ -133,12 +150,14 @@ export default {
   }
 
   &__socials {
-    width: 100%;
     text-align: center;
 
     &__icons {
+      margin-top: 40px;
       display: flex;
       justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px 30px;
 
       :hover > * {
         stroke: Rgb($color-secondary);
