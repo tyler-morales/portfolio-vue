@@ -35,6 +35,27 @@ export default {
   },
   components: {
     ArrowRightIcon
+  },
+  mounted() {
+    this.$nextTick(function() {
+      window.addEventListener('resize', this.getWindowWidth)
+
+      //Init
+      this.getWindowWidth()
+    })
+  },
+
+  methods: {
+    getWindowWidth() {
+      if (screen.width > 992) {
+        this.caseStudy.reverse = true
+      } else {
+        this.caseStudy.reverse = false
+      }
+    }
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.getWindowWidth)
   }
 }
 </script>
@@ -52,10 +73,7 @@ export default {
   @include breakpoint(md) {
     flex-direction: column-reverse;
     text-align: center;
-
-    & > * {
-      margin-bottom: 30px;
-    }
+    gap: 30px;
   }
 
   &__text {
@@ -75,16 +93,18 @@ export default {
       display: flex;
       align-items: center;
       margin: 15px 0;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      @include breakpoint(md) {
+        justify-content: center;
+      }
 
       &--tag {
         background-color: Rgba($color-tag / $lighten);
         color: Rgb($color-tag);
         padding: 8px 15px;
         border-radius: 15px;
-      }
-
-      &--tag:not(:last-child) {
-        margin-right: 25px;
       }
     }
   }

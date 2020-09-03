@@ -29,15 +29,14 @@ export default {
           title: 'Countdown Timer',
           description: 'A beautiful way to view a range of countdown timers',
           image: 'https://tmo.codes/images/game-laptop-l.png',
-          tags: ['HTML 5', 'SCSS', 'ES6'],
-          reverse: false
+          tags: ['HTML 5', 'SCSS', 'ES6']
         },
         {
           type: 'Game',
           title: 'Text Adventure Game',
           description: 'A beautiful way to view a range of countdown timers',
           image: 'https://tmo.codes/images/iss_mockup-tab.png',
-          tags: ['HTML 5', 'SCSS', 'ES6'],
+          tags: ['Leaflet.js', 'SCSS', 'ES6', 'Vue'],
           reverse: true
         }
       ]
@@ -51,6 +50,7 @@ export default {
   padding-top: 150px;
 
   @include breakpoint(sm) {
+    padding: 20px;
     padding-top: 75px;
   }
 
@@ -58,6 +58,11 @@ export default {
     margin-top: 200px;
     display: grid;
     gap: 150px;
+
+    @include breakpoint(sm) {
+      margin-top: 80px;
+      gap: 100px;
+    }
 
     &--title {
       text-align: center;
