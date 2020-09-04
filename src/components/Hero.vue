@@ -3,14 +3,14 @@
     <span class="project-type">Web app</span>
     <h1>ISS Tracker</h1>
     <h3>A real time satellite tracker</h3>
-    <router-link to="/projects/01_project">
+    <router-link to="/iss_tracker">
       <span id="view-project" class="link--view-project"
         >View Case Study
         <arrow-right-icon size="1.25x" class="icon"></arrow-right-icon>
       </span>
     </router-link>
     <img
-      src="../assets/images/iss_tracker/iss_mockup_imac.png"
+      src="../assets/images/iss_tracker/ISS_thumbnail.jpg"
       class="hero--img"
       alt="International Space Station Tracker Image Mockup"
     />

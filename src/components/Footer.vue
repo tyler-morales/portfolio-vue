@@ -1,9 +1,9 @@
 <template>
   <footer>
-    <div class="logo">
+    <a href="#home" class="logo">
       <span>Tmo</span>
       <span>Codes</span>
-    </div>
+    </a>
     <div class="links">
       <a href="#projects">Projects</a>
       <a href="#about">About</a>
@@ -21,7 +21,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  max-width: 75vw;
+  max-width: 80vw;
   margin: 50px auto;
   font-size: 16px;
 

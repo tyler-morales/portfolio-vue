@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div id="home" class="home">
     <!-- HERO -->
     <Hero />
 
@@ -77,12 +77,12 @@ export default {
       notableProjects: [
         {
           title: 'Manifest Website',
-          image: 'https://tmo.codes/images/ecuador.jpg',
+          image: require('../assets/images/iss_tracker/ISS_thumbnail.jpg'),
           link: 'https://www.manifestledger.com/'
         },
         {
           title: 'Manifest Website',
-          image: 'https://tmo.codes/images/tik-it.jpg',
+          image: require('../assets/images/tik-it/TIKIT_thumbnail.jpg'),
           link: 'https://www.manifestledger.com/'
         },
         {

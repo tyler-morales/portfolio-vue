@@ -72,6 +72,6 @@ export default {
 .img-hover-zoom--colorize:hover img {
   transition: all 0.5s ease-in-out;
   filter: grayscale(0);
-  transform: scale(1.1);
+  transform: scale(1);
 }
 </style>

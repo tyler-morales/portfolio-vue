@@ -101,13 +101,13 @@ export default {
   }
 
   & > * {
-    background-color: #fff;
+    background-color: var(--white);
     padding: 44px;
     display: inline-block;
     margin: 30px auto;
     width: 100%;
     border-radius: 40px;
-    box-shadow: 4px 12px 40px 6px rgba(0, 0, 0, 0.04);
+    box-shadow: var(--shadow-light);
 
     @include breakpoint(sm) {
       padding: 0;
