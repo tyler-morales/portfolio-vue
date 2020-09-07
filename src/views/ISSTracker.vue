@@ -5,16 +5,7 @@
 
     <!-- MAIN CONTENT -->
     <main class="main-case">
-      <section class="intro">
-        <h2 class="intro--title">An Industry leader and innovator</h2>
-        <p>
-          The International Space Station (ISS) is a multi-nation construction
-          project that is the largest single structure humans ever put into
-          space. Its main construction was completed between 1998 and 2011,
-          although the station continually evolves to include new missions and
-          experiments. It has been continuously occupied since Nov. 2, 2000.
-        </p>
-      </section>
+      <Intro :intro="intro" />
 
       <!-- SNIPPETS -->
       <section id="quickfacts" class="snippets">
@@ -45,11 +36,13 @@
 <script>
 import Snippets from '@/components/project/Snippets'
 import Hero from '@/components/project/Hero'
+import Intro from '@/components/project/Intro'
 
 export default {
   components: {
     Snippets,
-    Hero
+    Hero,
+    Intro
   },
   data() {
     return {
@@ -57,6 +50,10 @@ export default {
         title: 'International Space Station Tracker',
         subTitle: 'A real time satellite tracker',
         image: require('../assets/images/iss_tracker/banner.jpg')
+      },
+      intro: {
+        title: 'An Industry leader and innovator',
+        description: `The International Space Station (ISS) is a multi-nation constructionproject that is the largest single structure humans ever put into space.Its main construction was completed between 1998 and 2011, although thestation continually evolves to include new missions and experiments. Ithas been continuously occupied since Nov. 2, 2000.`
       },
       snippets: [
         {
@@ -97,32 +94,6 @@ export default {
 
 <style lang="scss" scoped>
 .main-case {
-  .intro {
-    max-width: 800px;
-    text-align: center;
-    margin: 0 auto;
-
-    @include breakpoint(md) {
-      text-align: left;
-      width: auto;
-    }
-
-    &--title {
-      font-size: 80px;
-      line-height: 1.0625;
-      margin-bottom: 30px;
-
-      @include breakpoint(md) {
-        font-size: 60px;
-        font-weight: 500;
-      }
-
-      @include breakpoint(sm) {
-        font-size: 25px;
-      }
-    }
-  }
-
   .snippets {
     .snippet-list {
       display: grid;

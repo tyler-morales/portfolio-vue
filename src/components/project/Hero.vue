@@ -3,7 +3,7 @@
     <div class="container">
       <div class="text">
         <h1 class="multiline-strikethrough">{{ hero.title }}</h1>
-        <h4>{{ hero.description }}</h4>
+        <h4>{{ hero.subTitle }}</h4>
       </div>
     </div>
   </div>
