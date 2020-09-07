@@ -21,14 +21,7 @@
       </section>
 
       <!-- SITUATION -->
-      <section class="situation">
-        <h3 class="section-header">The Situation</h3>
-        <p>
-          We need an interactive and real-time view of the ISS with a modern
-          design
-        </p>
-        <h5>–ISS Comission</h5>
-      </section>
+      <Situation :situation="situation" />
     </main>
   </div>
 </template>
@@ -37,12 +30,14 @@
 import Snippets from '@/components/project/Snippets'
 import Hero from '@/components/project/Hero'
 import Intro from '@/components/project/Intro'
+import Situation from '@/components/project/Situation'
 
 export default {
   components: {
     Snippets,
     Hero,
-    Intro
+    Intro,
+    Situation
   },
   data() {
     return {
@@ -86,7 +81,12 @@ export default {
             }
           ]
         }
-      ]
+      ],
+      situation: {
+        description:
+          'We need an interactive and real-time view of the ISS with a modern design',
+        org: '–ISS Comission'
+      }
     }
   }
 }
@@ -106,24 +106,6 @@ export default {
 
       @include breakpoint(sm) {
         gap: 30px 80px;
-      }
-    }
-  }
-
-  .situation {
-    p {
-      font-size: 80px;
-      line-height: 97px;
-      margin-bottom: 40px;
-
-      @include breakpoint(md) {
-        font-size: 50px;
-        line-height: 60px;
-      }
-
-      @include breakpoint(sm) {
-        font-size: 22px;
-        line-height: 30px;
       }
     }
   }
