@@ -16,6 +16,9 @@
 
       <!-- SOLUTION -->
       <Solution :solution="solution" />
+
+      <!-- THE PROCESS -->
+      <TheProcess :process="process" />
     </main>
   </div>
 </template>
@@ -26,6 +29,7 @@ import Hero from '@/components/project/Hero'
 import Intro from '@/components/project/Intro'
 import Situation from '@/components/project/Situation'
 import Solution from '@/components/project/Solution'
+import TheProcess from '@/components/project/TheProcess'
 
 export default {
   components: {
@@ -33,7 +37,8 @@ export default {
     Hero,
     Intro,
     Situation,
-    Solution
+    Solution,
+    TheProcess
   },
   data() {
     return {
@@ -88,13 +93,14 @@ export default {
           'Translating Data Into a Readable, Digestible & Beautiful Application',
         description:
           'The International Space Station (ISS) is a multi-nation construction project that is the largest single structure humans ever put into space. Its main construction was completed between 1998 and 2011, although the station continually evolves to include new missions and experiments. It has been continuously occupied since Nov. 2, 2000.'
+      },
+      process: {
+        description:
+          'There is more to design and web development than the mere process of what one sees as the final product. Far before any visual interface is conceived, I meet and collaborate with the client to better understand their goals. Armed with this knowledge, I am able to build smart– incorporating business needs as well as design aesthetics and modern web architecture and technologies to solve the most important needs for the client.'
       }
     }
   }
 }
 </script>
 
-<style lang="scss" scoped>
-.main-case {
-}
-</style>
+<style lang="scss" scoped></style>
