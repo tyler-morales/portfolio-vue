@@ -1,0 +1,39 @@
+// project page
+
+.project {
+  padding-top: 79px;
+
+  @include breakpoint(md) {
+    padding-top: 75px;
+  }
+
+  @include breakpoint(sm) {
+    padding-top: 68px;
+  }
+}
+
+.main-case {
+  display: grid;
+  gap: 200px;
+  width: 70vw;
+  margin: 0 auto;
+  margin-top: 100px;
+
+  @include breakpoint(sm) {
+    width: auto;
+    padding: 20px;
+  }
+
+  @include breakpoint(sm) {
+    gap: 50px;
+    margin-top: 50px;
+  }
+
+  .section-header {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    margin-bottom: 50px;
+  }
+}

@@ -13,7 +13,7 @@
     </div>
 
     <!-- MAIN CONTENT -->
-    <main>
+    <main class="main-case">
       <section class="intro">
         <h2 class="intro--title">An Industry leader and innovator</h2>
         <p>
@@ -27,7 +27,7 @@
 
       <!-- SNIPPETS -->
       <section id="quickfacts" class="snippets">
-        <h3>Snippets</h3>
+        <h3 class="section-header">Snippets</h3>
         <div class="snippet-list">
           <Snippets
             class="snippet"
@@ -40,7 +40,7 @@
 
       <!-- SITUATION -->
       <section class="situation">
-        <h3 class="">The Situation</h3>
+        <h3 class="section-header">The Situation</h3>
         <p>
           We need an interactive and real-time view of the ISS with a modern
           design
@@ -98,22 +98,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-main {
-  display: grid;
-  gap: 200px;
-  width: 70vw;
-  margin: 0 auto;
-  margin-top: 100px;
-
-  @include breakpoint(sm) {
-    width: auto;
-    padding: 20px;
-  }
-  @include breakpoint(sm) {
-    gap: 50px;
-    margin-top: 50px;
-  }
-
+.main-case {
   .intro {
     max-width: 800px;
     text-align: center;
@@ -141,14 +126,6 @@ main {
   }
 
   .snippets {
-    h3 {
-      background-color: black;
-      color: white;
-      padding: 10px;
-      display: inline-block;
-      margin-bottom: 50px;
-    }
-
     .snippet-list {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -161,44 +138,10 @@ main {
       @include breakpoint(sm) {
         gap: 30px 80px;
       }
-
-      &--title {
-        border-bottom: 1px solid var(--black);
-        margin-bottom: 20px;
-        padding-bottom: 15px;
-        font-weight: 600;
-      }
-
-      li:not(:first-child) {
-        display: inline;
-        margin-right: 15px;
-      }
-
-      li:first-child::after {
-        content: '';
-      }
-
-      li:last-child::after {
-        content: '';
-      }
-
-      li::after {
-        content: '|';
-        padding-right: 10px;
-        padding-left: 20px;
-      }
     }
   }
 
   .situation {
-    h3 {
-      background-color: black;
-      color: white;
-      padding: 10px;
-      display: inline-block;
-      margin-bottom: 50px;
-    }
-
     p {
       font-size: 80px;
       line-height: 97px;
@@ -228,55 +171,40 @@ main {
 //     transparent 1.5ex
 //   );
 // }
-.project {
-  padding-top: 79px;
-  // max-width: 80vw;
-  // margin: 0 auto;
+
+.hero {
+  height: 720px;
+  background-image: url('../assets/images/iss_tracker/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 
   @include breakpoint(md) {
-    // padding: 50px;
-    padding-top: 75px;
+    height: 360px;
   }
 
-  @include breakpoint(sm) {
-    // padding: 20px;
-    padding-top: 68px;
-  }
+  .container {
+    height: 100%;
+    max-width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 240px;
+    align-items: center;
 
-  .hero {
-    height: 720px;
-    background-image: url('../assets/images/iss_tracker/banner.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    @include breakpoint(md) {
-      height: 360px;
+    @include breakpoint(sm) {
+      grid-template-columns: 1fr;
+      gap: 0;
+      text-align: center;
     }
 
-    .container {
-      height: 100%;
-      max-width: 80vw;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 240px;
-      align-items: center;
+    .text {
+      max-width: 600px;
+      grid-column: 2;
+      color: var(--white);
+      line-height: 75px;
 
-      @include breakpoint(sm) {
-        grid-template-columns: 1fr;
-        gap: 0;
-        text-align: center;
-      }
-
-      .text {
-        max-width: 600px;
-        grid-column: 2;
-        color: var(--white);
-        line-height: 75px;
-
-        h4 {
-          margin-top: 30px;
-        }
+      h4 {
+        margin-top: 30px;
       }
     }
   }
