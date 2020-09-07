@@ -1,14 +1,9 @@
 <template>
-  <ul v-if="!snippet.link" class="snippet">
+  <ul class="snippet">
     <li class="title">{{ snippet.name }}</li>
     <li v-for="(item, index) in snippet.items" :key="index">
-      {{ item }}
-    </li>
-  </ul>
-  <ul v-else class="snippet">
-    <li class="title">{{ snippet.name }}</li>
-    <li v-for="(item, index) in snippet.items" :key="index">
-      <a target="_blank" :href="item.link">{{ item.name }}</a>
+      <span v-if="!snippet.link">{{ item }}</span>
+      <a v-else target="_blank" :href="item.link">{{ item.name }}</a>
     </li>
   </ul>
 </template>
