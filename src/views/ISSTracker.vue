@@ -27,30 +27,14 @@
 
       <!-- SNIPPETS -->
       <section id="quickfacts" class="snippets">
-        <h3 class="">Snippets</h3>
+        <h3>Snippets</h3>
         <div class="snippet-list">
-          <ul class="snippet">
-            <li class="snippet-list--title">Technologies</li>
-            <li>HTML</li>
-            <li>SCSS/CSS</li>
-            <li>Vanilla Javascript</li>
-            <li>Vue JS</li>
-            <li>Hugo</li>
-          </ul>
-          <ul class="snippet">
-            <li class="snippet-list--title">What I learned</li>
-            <li>API Intergration</li>
-            <li>Async-await Functions</li>
-            <li>HTML Data Themes</li>
-          </ul>
-          <ul class="snippet">
-            <li class="snippet-list--title">Date</li>
-            <li>June 2020</li>
-          </ul>
-          <ul class="snippet">
-            <li class="snippet-list--title">Codebase</li>
-            <li>Github</li>
-          </ul>
+          <Snippets
+            class="snippet"
+            v-for="(snippet, index) in snippets"
+            :key="index"
+            :snippet="snippet"
+          />
         </div>
       </section>
 
@@ -68,7 +52,49 @@
 </template>
 
 <script>
-export default {}
+import Snippets from '@/components/project/Snippets'
+
+export default {
+  components: {
+    Snippets
+  },
+  data() {
+    return {
+      snippets: [
+        {
+          name: 'Tech Stack',
+          items: ['HTML', 'SCSS', 'ES6', 'Vue']
+        },
+        {
+          name: 'What I Learned',
+          items: [
+            'API Intergration',
+            'Async-await Functions',
+            'HTML Data Themes'
+          ]
+        },
+        {
+          name: 'Date',
+          items: ['September 2020']
+        },
+        {
+          name: 'Codebase',
+          link: true,
+          items: [
+            {
+              name: 'Github',
+              link: 'https://github.com/'
+            },
+            {
+              name: 'Live Site',
+              link: 'https://tmo.codes/'
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -111,10 +137,6 @@ main {
       @include breakpoint(sm) {
         font-size: 25px;
       }
-    }
-
-    p {
-      font-weight: 500;
     }
   }
 
