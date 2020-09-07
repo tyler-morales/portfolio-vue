@@ -41,8 +41,11 @@ li:last-child::after {
 }
 
 li::after {
-  content: '|';
+  content: '  |';
   padding-right: 10px;
   padding-left: 20px;
+}
+li:last-child {
+  padding-right: 0;
 }
 </style>
