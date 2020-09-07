@@ -2,6 +2,7 @@
   <section id="quickfacts" class="snippets">
     <h3 class="section-header">Snippets</h3>
     <div class="snippet-list">
+      <!-- SNIPPET ITEM -->
       <ul class="snippet" v-for="(snippet, index) in snippets" :key="index">
         <li class="title">{{ snippet.name }}</li>
         <li v-for="(item, index) in snippet.items" :key="index">
