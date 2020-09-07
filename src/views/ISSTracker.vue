@@ -1,16 +1,7 @@
 <template>
   <div class="project">
     <!-- HERO -->
-    <div class="hero">
-      <div class="container">
-        <div class="text">
-          <h1 class="multiline-strikethrough">
-            International Space Station Tracker
-          </h1>
-          <h4>A real time satellite tracker</h4>
-        </div>
-      </div>
-    </div>
+    <Hero :hero="hero" />
 
     <!-- MAIN CONTENT -->
     <main class="main-case">
@@ -53,13 +44,20 @@
 
 <script>
 import Snippets from '@/components/project/Snippets'
+import Hero from '@/components/project/Hero'
 
 export default {
   components: {
-    Snippets
+    Snippets,
+    Hero
   },
   data() {
     return {
+      hero: {
+        title: 'International Space Station Tracker',
+        subTitle: 'A real time satellite tracker',
+        image: require('../assets/images/iss_tracker/banner.jpg')
+      },
       snippets: [
         {
           name: 'Tech Stack 📚',
@@ -155,56 +153,6 @@ export default {
       @include breakpoint(sm) {
         font-size: 22px;
         line-height: 30px;
-      }
-    }
-  }
-}
-
-// .multiline-strikethrough {
-//   display: inline;
-//   // font-size: 4rem;
-//   // line-height 1em;
-//   background-image: linear-gradient(
-//     transparent 0.8ex,
-//     Rgb($color-secondary) 0.8ex,
-//     Rgb($color-secondary) 1.5ex,
-//     transparent 1.5ex
-//   );
-// }
-
-.hero {
-  height: 720px;
-  background-image: url('../assets/images/iss_tracker/banner.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  @include breakpoint(md) {
-    height: 360px;
-  }
-
-  .container {
-    height: 100%;
-    max-width: 80vw;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 240px;
-    align-items: center;
-
-    @include breakpoint(sm) {
-      grid-template-columns: 1fr;
-      gap: 0;
-      text-align: center;
-    }
-
-    .text {
-      max-width: 600px;
-      grid-column: 2;
-      color: var(--white);
-      line-height: 75px;
-
-      h4 {
-        margin-top: 30px;
       }
     }
   }
