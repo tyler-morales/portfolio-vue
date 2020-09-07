@@ -5,20 +5,11 @@
 
     <!-- MAIN CONTENT -->
     <main class="main-case">
+      <!-- INTRO -->
       <Intro :intro="intro" />
 
       <!-- SNIPPETS -->
-      <section id="quickfacts" class="snippets">
-        <h3 class="section-header">Snippets</h3>
-        <div class="snippet-list">
-          <Snippets
-            class="snippet"
-            v-for="(snippet, index) in snippets"
-            :key="index"
-            :snippet="snippet"
-          />
-        </div>
-      </section>
+      <Snippets :snippets="snippets" />
 
       <!-- SITUATION -->
       <Situation :situation="situation" />
@@ -94,20 +85,5 @@ export default {
 
 <style lang="scss" scoped>
 .main-case {
-  .snippets {
-    .snippet-list {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 50px 80px;
-
-      @include breakpoint(md) {
-        grid-template-columns: 1fr;
-      }
-
-      @include breakpoint(sm) {
-        gap: 30px 80px;
-      }
-    }
-  }
 }
 </style>
