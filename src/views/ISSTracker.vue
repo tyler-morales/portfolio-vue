@@ -62,11 +62,11 @@ export default {
     return {
       snippets: [
         {
-          name: 'Tech Stack',
+          name: 'Tech Stack 📚',
           items: ['HTML', 'SCSS', 'ES6', 'Vue']
         },
         {
-          name: 'What I Learned',
+          name: 'What I Learned ✏️',
           items: [
             'API Intergration',
             'Async-await Functions',
@@ -74,11 +74,11 @@ export default {
           ]
         },
         {
-          name: 'Date',
-          items: ['September 2020']
+          name: 'Timeline ⏱',
+          items: ['September-October 2020']
         },
         {
-          name: 'Codebase',
+          name: 'Codebase 👾',
           link: true,
           items: [
             {
