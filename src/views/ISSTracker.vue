@@ -13,6 +13,9 @@
 
       <!-- SITUATION -->
       <Situation :situation="situation" />
+
+      <!-- SOLUTION -->
+      <Solution :solution="solution" />
     </main>
   </div>
 </template>
@@ -22,13 +25,15 @@ import Snippets from '@/components/project/Snippets'
 import Hero from '@/components/project/Hero'
 import Intro from '@/components/project/Intro'
 import Situation from '@/components/project/Situation'
+import Solution from '@/components/project/Solution'
 
 export default {
   components: {
     Snippets,
     Hero,
     Intro,
-    Situation
+    Situation,
+    Solution
   },
   data() {
     return {
@@ -77,6 +82,12 @@ export default {
         description:
           'We need an interactive and real-time view of the ISS with a modern design',
         org: '–ISS Comission'
+      },
+      solution: {
+        title:
+          'Translating Data Into a Readable, Digestible & Beautiful Application',
+        description:
+          'The International Space Station (ISS) is a multi-nation construction project that is the largest single structure humans ever put into space. Its main construction was completed between 1998 and 2011, although the station continually evolves to include new missions and experiments. It has been continuously occupied since Nov. 2, 2000.'
       }
     }
   }
