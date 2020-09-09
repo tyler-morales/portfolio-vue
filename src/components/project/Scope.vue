@@ -44,12 +44,17 @@ export default {
 <style lang="scss" scoped>
 .scope {
   margin-top: 100px;
+
+  @include breakpoint(sm) {
+    text-align: center;
+    margin-top: 50px;
+  }
 }
 
 .scope-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 40px;
 }
 
 .scope__item {
@@ -59,6 +64,10 @@ export default {
     display: flex;
     align-items: center;
     gap: 10px;
+
+    @include breakpoint(sm) {
+      justify-content: center;
+    }
   }
   .item {
     color: Rgba($color-primary / $semi-light);
