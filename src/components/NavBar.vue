@@ -96,6 +96,10 @@ export default {
     transition: all 0.3s;
     font-size: 18px;
 
+    @include breakpoint(sm) {
+      padding: 0 15px;
+      line-height: 26px;
+    }
     &:hover {
       color: var(--black);
       background-color: var(--white);
@@ -104,6 +108,10 @@ export default {
     .sub-title {
       font-size: 12px;
       margin-top: 5px;
+
+      @include breakpoint(sm) {
+        margin-top: 0;
+      }
     }
   }
 
