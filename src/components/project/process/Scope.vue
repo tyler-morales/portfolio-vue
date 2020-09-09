@@ -46,31 +46,25 @@ export default {
   margin-top: 100px;
 
   @include breakpoint(sm) {
-    text-align: center;
     margin-top: 50px;
   }
-}
-
-.scope-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 40px;
-}
-
-.scope__item {
-  .title {
-    font-weight: 500;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    @include breakpoint(sm) {
-      justify-content: center;
-    }
+  .scope-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
   }
-  .item {
-    color: Rgba($color-primary / $semi-light);
+
+  .scope__item {
+    .title {
+      font-weight: 500;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .item {
+      color: Rgba($color-primary / $semi-light);
+    }
   }
 }
 </style>

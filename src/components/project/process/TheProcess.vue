@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import Scope from '@/components/project/Scope'
+import Scope from '@/components/project/process/Scope'
 
 export default {
   props: {
@@ -43,32 +43,32 @@ export default {
   },
   components: {
     Scope
-  },
-  data() {
-    // return {
-    //   cards: [
-    //     { background: '#00659d' },
-    //     { background: '#00abbc' },
-    //     { background: '#e2c58a' },
-    //     { background: '#fc8890' },
-    //     { background: '#b35d7f' }
-    //   ],
-    //   gap: 30,
-    //   perView: 2,
-    //   breakpoints: {
-    //     1024: {
-    //       perView: 2
-    //     },
-    //     768: {
-    //       perView: 1
-    //     }
-    //   },
-    //   peek: {
-    //     before: 0,
-    //     after: 100
-    //   }
-    // }
   }
+  // data() {
+  // return {
+  //   cards: [
+  //     { background: '#00659d' },
+  //     { background: '#00abbc' },
+  //     { background: '#e2c58a' },
+  //     { background: '#fc8890' },
+  //     { background: '#b35d7f' }
+  //   ],
+  //   gap: 30,
+  //   perView: 2,
+  //   breakpoints: {
+  //     1024: {
+  //       perView: 2
+  //     },
+  //     768: {
+  //       perView: 1
+  //     }
+  //   },
+  //   peek: {
+  //     before: 0,
+  //     after: 100
+  //   }
+  // }
+  // }
 }
 </script>
 

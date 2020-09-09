@@ -19,6 +19,9 @@
 
       <!-- THE PROCESS -->
       <TheProcess :process="process" :scope="scope" />
+
+      <!-- DISCOVERY -->
+      <Discovery :discovery="discovery" :objectives="objectives" />
     </main>
   </div>
 </template>
@@ -29,8 +32,8 @@ import Hero from '@/components/project/Hero'
 import Intro from '@/components/project/Intro'
 import Situation from '@/components/project/Situation'
 import Solution from '@/components/project/Solution'
-import TheProcess from '@/components/project/TheProcess'
-// import Scope from '@/components/project/Scope'
+import TheProcess from '@/components/project/process/TheProcess'
+import Discovery from '@/components/project/process/Discovery'
 
 export default {
   components: {
@@ -39,8 +42,8 @@ export default {
     Intro,
     Situation,
     Solution,
-    TheProcess
-    // Scope
+    TheProcess,
+    Discovery
   },
   data() {
     return {
@@ -104,33 +107,42 @@ export default {
         {
           phaseName: 'Discovery',
           globe: true,
-          responsibilities: ['Workshop', 'Research', 'Project Planning']
+          responsibilities: [
+            'General Research & Objectives',
+            'Competitive Analysis'
+          ]
         },
         {
           phaseName: 'Strategy',
           strategy: true,
-          responsibilities: [
-            'Information Architecture',
-            'Interaction Design',
-            'Brand Personalization'
-          ]
+          responsibilities: ['Information Architecture', 'Interaction Design']
         },
         {
           phaseName: 'Design',
           design: true,
-          responsibilities: [
-            'Art Direction',
-            'UI Design',
-            'Visual Moodboard',
-            'Wireframes/ Mockup'
-          ]
+          responsibilities: ['UI Design', 'Moodboard', 'Wireframes/ Mockup']
         },
         {
           phaseName: 'Development',
           code: true,
           responsibilities: ['Frontend Development', 'Accessibility Standards']
         }
-      ]
+      ],
+      discovery: {
+        description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis cum provident velit eaque, pariatur perferendis!`
+      },
+      objectives: {
+        goals: [
+          'Too much complexity',
+          'Increase number of users',
+          'Match design aesthetic of similar leading companies¹'
+        ],
+        solutions: [
+          'Too much complexity',
+          'Increase number of users',
+          'Match design aesthetic of similar leading companies¹'
+        ]
+      }
     }
   }
 }
