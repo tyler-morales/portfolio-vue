@@ -31,6 +31,7 @@ footer {
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
+    line-height: 17px;
   }
 
   .links {
