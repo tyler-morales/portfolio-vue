@@ -18,7 +18,7 @@
       <Solution :solution="solution" />
 
       <!-- THE PROCESS -->
-      <TheProcess :process="process" />
+      <TheProcess :process="process" :scope="scope" />
     </main>
   </div>
 </template>
@@ -30,6 +30,7 @@ import Intro from '@/components/project/Intro'
 import Situation from '@/components/project/Situation'
 import Solution from '@/components/project/Solution'
 import TheProcess from '@/components/project/TheProcess'
+// import Scope from '@/components/project/Scope'
 
 export default {
   components: {
@@ -39,6 +40,7 @@ export default {
     Situation,
     Solution,
     TheProcess
+    // Scope
   },
   data() {
     return {
@@ -97,7 +99,38 @@ export default {
       process: {
         description:
           'There is more to design and web development than the mere process of what one sees as the final product. Far before any visual interface is conceived, I meet and collaborate with the client to better understand their goals. Armed with this knowledge, I am able to build smart– incorporating business needs as well as design aesthetics and modern web architecture and technologies to solve the most important needs for the client.'
-      }
+      },
+      scope: [
+        {
+          phaseName: 'Discovery',
+          globe: true,
+          responsibilities: ['Workshop', 'Research', 'Project Planning']
+        },
+        {
+          phaseName: 'Strategy',
+          strategy: true,
+          responsibilities: [
+            'Information Architecture',
+            'Interaction Design',
+            'Brand Personalization'
+          ]
+        },
+        {
+          phaseName: 'Design',
+          design: true,
+          responsibilities: [
+            'Art Direction',
+            'UI Design',
+            'Visual Moodboard',
+            'Wireframes/ Mockup'
+          ]
+        },
+        {
+          phaseName: 'Development',
+          code: true,
+          responsibilities: ['Frontend Development', 'Accessibility Standards']
+        }
+      ]
     }
   }
 }

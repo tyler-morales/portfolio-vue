@@ -35,5 +35,9 @@
     padding: 10px;
     display: inline-block;
     margin-bottom: 50px;
+
+    @include breakpoint(sm) {
+      margin-bottom: 20px;
+    }
   }
 }
