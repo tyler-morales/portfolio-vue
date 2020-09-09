@@ -22,7 +22,7 @@ footer {
   justify-content: space-between;
   align-items: flex-end;
   max-width: 80vw;
-  margin: 50px auto;
+  margin: 100px auto;
   font-size: 16px;
 
   .logo {
@@ -44,13 +44,13 @@ footer {
   }
 
   @include breakpoint(md) {
-    padding: 50px;
-    margin: 0 auto;
+    // padding: 50px;
+    // margin: 0 auto;
     max-width: 90vw;
   }
 
   @include breakpoint(sm) {
-    padding: 20px;
+    margin: 50px auto;
   }
 }
 </style>
