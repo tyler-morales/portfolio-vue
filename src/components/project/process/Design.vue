@@ -7,7 +7,6 @@
     <div class="container">
       <UI :ui="ui" />
       <Moodboard :moodboard="moodboard" />
-      <UI :ui="ui" />
     </div>
   </section>
 </template>

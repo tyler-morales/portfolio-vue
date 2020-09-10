@@ -64,13 +64,8 @@ export default {
     }
   },
   created() {
-    if (window.innerWidth < 768) {
+    if (window.innerWidth <= 800) {
       this.peek.after = 0
-    }
-  },
-  updated() {
-    if (window.innerWidth < 768) {
-      this.peek.perView = 1
     }
   }
 }
@@ -82,7 +77,7 @@ export default {
   margin-top: 50px;
   max-width: 70vw;
 
-  @include breakpoint(sm) {
+  @include breakpoint(md) {
     // padding: 5px;
     max-width: 90vw;
   }
