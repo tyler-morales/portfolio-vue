@@ -21,7 +21,11 @@
       <TheProcess :process="process" :scope="scope" />
 
       <!-- DISCOVERY -->
-      <Discovery :discovery="discovery" :objectives="objectives" />
+      <Discovery
+        :discovery="discovery"
+        :competition="competition"
+        :objectives="objectives"
+      />
     </main>
   </div>
 </template>
@@ -135,14 +139,37 @@ export default {
         goals: [
           'Too much complexity',
           'Increase number of users',
-          'Match design aesthetic of similar leading companies¹'
+          'Match design aesthetic of similar leading companies'
         ],
         solutions: [
           'Too much complexity',
           'Increase number of users',
-          'Match design aesthetic of similar leading companies¹'
+          'Match design aesthetic of similar leading companies'
         ]
-      }
+      },
+      competition: [
+        {
+          name: 'abc Company',
+          description:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dicta libero minus non eum accusantium.',
+          keyFeatures: ['Clean UI', 'Good UX', 'Unresponsive'],
+          image: 'https://picsum.photos/id/737/300/200'
+        },
+        {
+          name: 'abc Company',
+          description:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dicta libero minus non eum accusantium.',
+          keyFeatures: ['Clean UI', 'Good UX', 'Unresponsive'],
+          image: 'https://picsum.photos/id/927/300/200'
+        },
+        {
+          name: 'abc Company',
+          description:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dicta libero minus non eum accusantium.',
+          keyFeatures: ['Clean UI', 'Good UX', 'Unresponsive'],
+          image: 'https://picsum.photos/id/893/300/200'
+        }
+      ]
     }
   }
 }

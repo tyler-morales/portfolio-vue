@@ -12,10 +12,10 @@ button {
 
   &:focus {
     outline: none;
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-base);
-    color: rgba(var(--color-text-black), 1);
-    background-color: var(--white);
+    // transform: translateY(-3px);
+    // box-shadow: var(--shadow-base);
+    // color: rgba(var(--color-text-black), 1);
+    // background-color: var(--white);
   }
 }
 

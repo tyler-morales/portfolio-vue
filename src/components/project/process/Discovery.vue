@@ -3,14 +3,17 @@
     <h3 class="section-header">Discovery</h3>
     <p>{{ discovery.description }}</p>
     <Objectives :objectives="objectives" />
+    <Competition :competition="competition" />
   </section>
 </template>
 
 <script>
 import Objectives from '@/components/project/process/Objectives'
+import Competition from '@/components/project/process/Competition'
 export default {
   components: {
-    Objectives
+    Objectives,
+    Competition
   },
   props: {
     discovery: {
@@ -19,6 +22,10 @@ export default {
     },
     objectives: {
       type: Object,
+      required: false
+    },
+    competition: {
+      type: Array,
       required: false
     }
   }
