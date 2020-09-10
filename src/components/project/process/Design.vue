@@ -7,6 +7,7 @@
     <div class="container">
       <UI :ui="ui" />
       <Moodboard :moodboard="moodboard" />
+      <UI :ui="ui" />
     </div>
   </section>
 </template>
@@ -40,7 +41,8 @@ export default {
 <style lang="scss" scoped>
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  // grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 
   @include breakpoint(sm) {

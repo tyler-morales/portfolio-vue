@@ -196,11 +196,11 @@ export default {
         description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui porro deleniti mollitia facilis nobis esse autem, nesciunt cupiditate molestiae tempore?`
       },
       ui: {
-        image: 'https://picsum.photos/id/529/300',
+        image: 'https://picsum.photos/id/529/500',
         description: 'a description of a picture'
       },
       moodboard: {
-        image: 'https://picsum.photos/id/526/300',
+        image: 'https://picsum.photos/id/526/500',
         description: 'a description of the moodboard'
       }
     }
