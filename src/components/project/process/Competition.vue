@@ -77,13 +77,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.competition {
-  margin-top: 100px;
-  @include breakpoint(sm) {
-    margin-top: 50px;
-  }
-}
-
 //glide.js slider
 .glide {
   margin-top: 50px;

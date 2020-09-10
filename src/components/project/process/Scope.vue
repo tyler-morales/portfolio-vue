@@ -52,6 +52,10 @@ export default {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 40px;
+
+    @include breakpoint(sm) {
+      grid-template-columns: 1fr;
+    }
   }
 
   .scope__item {

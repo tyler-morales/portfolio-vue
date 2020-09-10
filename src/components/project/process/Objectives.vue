@@ -30,17 +30,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.objectives {
-  margin-top: 100px;
-
-  @include breakpoint(sm) {
-    margin-top: 50px;
-  }
-}
 .objetive-container {
   display: grid;
   gap: 40px;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+
+  @include breakpoint(sm) {
+    grid-template-columns: 1fr;
+  }
 
   li {
     color: Rgba($color-primary / $semi-light);

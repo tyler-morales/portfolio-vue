@@ -1,7 +1,9 @@
 <template>
-  <section>
-    <h3 class="section-header">Discovery</h3>
-    <p>{{ discovery.description }}</p>
+  <section class="process-section">
+    <div>
+      <h3 class="section-header">Discovery</h3>
+      <p>{{ discovery.description }}</p>
+    </div>
     <Objectives :objectives="objectives" />
     <Competition :competition="competition" />
   </section>

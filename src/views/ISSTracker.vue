@@ -26,6 +26,12 @@
         :competition="competition"
         :objectives="objectives"
       />
+
+      <!-- STRATEGY -->
+      <Strategy :strategy="strategy" />
+
+      <!-- Design -->
+      <Design :design="design" :ui="ui" :moodboard="moodboard" />
     </main>
   </div>
 </template>
@@ -38,6 +44,8 @@ import Situation from '@/components/project/Situation'
 import Solution from '@/components/project/Solution'
 import TheProcess from '@/components/project/process/TheProcess'
 import Discovery from '@/components/project/process/Discovery'
+import Strategy from '@/components/project/process/Strategy'
+import Design from '@/components/project/process/Design'
 
 export default {
   components: {
@@ -47,7 +55,9 @@ export default {
     Situation,
     Solution,
     TheProcess,
-    Discovery
+    Discovery,
+    Strategy,
+    Design
   },
   data() {
     return {
@@ -169,10 +179,34 @@ export default {
           keyFeatures: ['Clean UI', 'Good UX', 'Unresponsive'],
           image: 'https://picsum.photos/id/893/300/200'
         }
-      ]
+      ],
+      strategy: {
+        description:
+          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis cum provident velit eaque, pariatur perferendis!',
+        infoArc: {
+          description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis cum provident velit eaque, pariatur perferendis!`,
+          image: 'https://picsum.photos/id/556/300'
+        },
+        interaction: {
+          description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis cum provident velit eaque, pariatur perferendis!`,
+          image: 'https://picsum.photos/id/292/300'
+        }
+      },
+      design: {
+        description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui porro deleniti mollitia facilis nobis esse autem, nesciunt cupiditate molestiae tempore?`
+      },
+      ui: {
+        image: 'https://picsum.photos/id/529/300',
+        description: 'a description of a picture'
+      },
+      moodboard: {
+        image: 'https://picsum.photos/id/526/300',
+        description: 'a description of the moodboard'
+      }
     }
   }
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+</style>
