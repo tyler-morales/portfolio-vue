@@ -2,6 +2,7 @@
   <section class="process-section">
     <div>
       <h3 class="section-header">Strategy</h3>
+      <h3>Thinking First</h3>
       <p>{{ strategy.description }}</p>
     </div>
     <StackedCards :strategy="strategy" />

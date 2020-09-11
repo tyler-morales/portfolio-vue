@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h4>Moodboard</h4>
+    <h3>Moodboard</h3>
     <img :src="moodboard.image" alt="" />
     <h5>{{ moodboard.description }}</h5>
   </div>

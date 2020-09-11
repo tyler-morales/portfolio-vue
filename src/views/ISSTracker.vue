@@ -30,8 +30,11 @@
       <!-- STRATEGY -->
       <Strategy :strategy="strategy" />
 
-      <!-- Design -->
+      <!-- DESIGN -->
       <Design :design="design" :ui="ui" :moodboard="moodboard" />
+
+      <!-- DEV -->
+      <Dev :dev="dev" :technologies="technologies" />
     </main>
   </div>
 </template>
@@ -46,6 +49,7 @@ import TheProcess from '@/components/project/process/TheProcess'
 import Discovery from '@/components/project/process/Discovery'
 import Strategy from '@/components/project/process/Strategy'
 import Design from '@/components/project/process/Design'
+import Dev from '@/components/project/process/Dev'
 
 export default {
   components: {
@@ -57,7 +61,8 @@ export default {
     TheProcess,
     Discovery,
     Strategy,
-    Design
+    Design,
+    Dev
   },
   data() {
     return {
@@ -202,11 +207,40 @@ export default {
       moodboard: {
         image: 'https://picsum.photos/id/526/500',
         description: 'a description of the moodboard'
-      }
+      },
+      dev: {
+        description:
+          'A description of something deve related hopefully long enough to make a thorough descripiotn of what I am trying to convey'
+      },
+      technologies: [
+        {
+          name: 'HTML',
+          image: 'https://cdn.svgporn.com/logos/html-5.svg'
+        },
+        {
+          name: 'GitHub',
+          image: 'https://cdn.svgporn.com/logos/github-icon.svg'
+        },
+        {
+          name: 'SCSS',
+          image: 'https://cdn.svgporn.com/logos/sass.svg'
+        },
+        {
+          name: 'Netlify',
+          image: 'https://cdn.svgporn.com/logos/netlify.svg'
+        },
+        {
+          name: 'ES6',
+          image: 'https://cdn.svgporn.com/logos/javascript.svg'
+        },
+        {
+          name: 'Vue',
+          image: 'https://cdn.svgporn.com/logos/vue.svg'
+        }
+      ]
     }
   }
 }
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

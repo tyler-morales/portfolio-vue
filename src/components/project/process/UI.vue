@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h4>Design System</h4>
+    <h3>Design System</h3>
     <img :src="ui.image" alt="" />
     <h5>{{ ui.description }}</h5>
   </div>
