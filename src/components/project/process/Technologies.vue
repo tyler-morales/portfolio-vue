@@ -7,7 +7,10 @@
         v-for="(technology, index) in technologies"
         :key="index"
       >
-        <img :src="technology.image" alt="" />
+        <img
+          :src="`https://cdn.svgporn.com/logos/${technology.logo}.svg`"
+          alt=""
+        />
         <span class="name">{{ technology.name }}</span>
       </ul>
     </div>

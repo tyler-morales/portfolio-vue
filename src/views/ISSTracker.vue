@@ -234,27 +234,27 @@ export default {
       technologies: [
         {
           name: 'HTML',
-          image: 'https://cdn.svgporn.com/logos/html-5.svg'
+          logo: 'html-5'
         },
         {
           name: 'GitHub',
-          image: 'https://cdn.svgporn.com/logos/github-icon.svg'
+          logo: 'github-icon'
         },
         {
           name: 'SCSS',
-          image: 'https://cdn.svgporn.com/logos/sass.svg'
+          logo: 'sass'
         },
         {
           name: 'Netlify',
-          image: 'https://cdn.svgporn.com/logos/netlify.svg'
+          logo: 'netlify'
         },
         {
           name: 'ES6',
-          image: 'https://cdn.svgporn.com/logos/javascript.svg'
+          logo: 'javascript'
         },
         {
           name: 'Vue',
-          image: 'https://cdn.svgporn.com/logos/vue.svg'
+          logo: 'vue'
         }
       ],
       features: [
