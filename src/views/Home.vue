@@ -83,7 +83,7 @@ export default {
       ],
       notableProjects: [
         {
-          title: 'Manifest Website',
+          title: 'ISS Tracker',
           image: require('../assets/images/iss_tracker/ISS_thumbnail.jpg'),
           link: 'https://www.manifestledger.com/'
         },
@@ -186,6 +186,10 @@ export default {
     margin: 100px;
     padding: 100px;
     text-align: center;
+
+    h4 {
+      font-weight: 400;
+    }
 
     @include breakpoint(lg) {
       margin: 50px;

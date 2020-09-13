@@ -91,7 +91,7 @@ export default {
         image: require('../assets/images/iss_tracker/banner.jpg')
       },
       intro: {
-        title: 'An Industry leader and innovator',
+        title: 'Making the Boring Interesting',
         description: `The International Space Station (ISS) is a multi-nation constructionproject that is the largest single structure humans ever put into space.Its main construction was completed between 1998 and 2011, although thestation continually evolves to include new missions and experiments. Ithas been continuously occupied since Nov. 2, 2000.`
       },
       snippets: [
