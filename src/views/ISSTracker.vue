@@ -1,5 +1,7 @@
 <template>
   <div class="project">
+    <!-- PROGRESS BAR -->
+    <CompletionBar />
     <!-- HERO -->
     <Hero :hero="hero" />
 
@@ -34,12 +36,16 @@
       <Design :design="design" :ui="ui" :moodboard="moodboard" />
 
       <!-- DEV -->
-      <Dev :dev="dev" :technologies="technologies" />
+      <Dev :dev="dev" :technologies="technologies" :features="features" />
+
+      <!-- RESULTS -->
+      <Results :results="results" :lighthouse="lighthouse" />
     </main>
   </div>
 </template>
 
 <script>
+import CompletionBar from '@/components/CompletionBar'
 import Snippets from '@/components/project/Snippets'
 import Hero from '@/components/project/Hero'
 import Intro from '@/components/project/Intro'
@@ -50,9 +56,11 @@ import Discovery from '@/components/project/process/Discovery'
 import Strategy from '@/components/project/process/Strategy'
 import Design from '@/components/project/process/Design'
 import Dev from '@/components/project/process/Dev'
+import Results from '@/components/project/Results'
 
 export default {
   components: {
+    CompletionBar,
     Snippets,
     Hero,
     Intro,
@@ -62,7 +70,8 @@ export default {
     Discovery,
     Strategy,
     Design,
-    Dev
+    Dev,
+    Results
   },
   data() {
     return {
@@ -236,6 +245,58 @@ export default {
         {
           name: 'Vue',
           image: 'https://cdn.svgporn.com/logos/vue.svg'
+        }
+      ],
+      features: [
+        {
+          name: 'Flexbox CSS Grid',
+          description:
+            'Flexbox & CSS grid made ispossible and simple to make aresponsive web app, adjusting font,size and elements accordingly'
+        },
+        {
+          name: 'Flexbox CSS Grid',
+          description:
+            'Flexbox & CSS grid made ispossible and simple to make aresponsive web app, adjusting font,size and elements accordingly'
+        },
+        {
+          name: 'Flexbox CSS Grid',
+          description:
+            'Flexbox & CSS grid made ispossible and simple to make aresponsive web app, adjusting font,size and elements accordingly'
+        },
+        {
+          name: 'Flexbox CSS Grid',
+          description:
+            'Flexbox & CSS grid made ispossible and simple to make aresponsive web app, adjusting font,size and elements accordingly'
+        },
+        {
+          name: 'Flexbox CSS Grid',
+          description:
+            'Flexbox & CSS grid made ispossible and simple to make aresponsive web app, adjusting font,size and elements accordingly'
+        },
+        {
+          name: 'Flexbox CSS Grid',
+          description:
+            'Flexbox & CSS grid made ispossible and simple to make aresponsive web app, adjusting font,size and elements accordingly'
+        }
+      ],
+      results: {
+        image: 'https://tmo.codes/images/iss_composite.png'
+      },
+      lighthouse: [
+        {
+          name: 'Speed',
+          icon: '⚡️',
+          score: 90
+        },
+        {
+          name: 'Performance',
+          icon: '💪🏽',
+          score: 95
+        },
+        {
+          name: 'Accesibility',
+          icon: '👁',
+          score: 92
         }
       ]
     }

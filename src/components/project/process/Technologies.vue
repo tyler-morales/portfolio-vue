@@ -35,7 +35,7 @@ export default {
   margin-top: 80px;
 
   @include breakpoint(sm) {
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr;
     gap: 50px;
   }
 

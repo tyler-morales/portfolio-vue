@@ -6,19 +6,23 @@
       <p>{{ dev.description }}</p>
     </div>
     <Technologies :technologies="technologies" />
+    <Features :features="features" />
   </section>
 </template>
 
 <script>
 import Technologies from '@/components/project/process/Technologies'
+import Features from '@/components/project/process/Features'
 
 export default {
   props: {
     dev: { type: Object, required: false },
-    technologies: { type: Object, required: false }
+    technologies: { type: Array, required: false },
+    features: { type: Array, required: false }
   },
   components: {
-    Technologies
+    Technologies,
+    Features
   }
 }
 </script>
