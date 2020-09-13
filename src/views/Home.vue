@@ -55,6 +55,13 @@ export default {
     Facts,
     About
   },
+  mounted() {
+    var section = this.$router.currentRoute.hash.replace('#', '')
+    if (section)
+      this.$nextTick(() =>
+        window.document.getElementById(section).scrollIntoView()
+      )
+  },
   data() {
     return {
       caseStudies: [
@@ -229,7 +236,7 @@ export default {
   }
 
   .about {
-    margin-top: 100px;
+    padding-top: 100px;
 
     &--title {
       text-align: center;

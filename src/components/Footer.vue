@@ -1,12 +1,12 @@
 <template>
   <footer>
-    <a href="#home" class="logo">
+    <router-link to="/#home" class="logo">
       <span>Tmo</span>
       <span>Codes</span>
-    </a>
+    </router-link>
     <div class="links">
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
+      <router-link to="/#projects">Projects</router-link>
+      <router-link to="/#about">About</router-link>
       <a href="mailto:moratyle@gmail.com">Contact</a>
     </div>
   </footer>

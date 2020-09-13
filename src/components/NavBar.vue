@@ -1,12 +1,12 @@
 <template>
   <nav class="nav" :class="{ 'hidden-navbar': !showNavbar }">
     <div class="nav__links">
-      <router-link to="/" class="nav__name">
+      <router-link to="/#home" class="nav__name">
         <span class="title">Tyler Morales</span>
         <span class="sub-title">Front End Developer</span>
       </router-link>
-      <router-link to="/" class="nav__about">About</router-link>
-      <router-link to="/projects" class="nav__projects">Projects</router-link>
+      <router-link to="/#about" class="nav__about">About</router-link>
+      <router-link to="/#projects" class="nav__projects">Projects</router-link>
     </div>
   </nav>
 </template>
