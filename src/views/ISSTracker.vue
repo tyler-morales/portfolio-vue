@@ -43,6 +43,9 @@
 
       <!-- SUMMARY -->
       <Summary :summary="summary" />
+
+      <!-- CTA -->
+      <CTA />
     </main>
   </div>
 </template>
@@ -61,6 +64,7 @@ import Design from '@/components/project/process/Design'
 import Dev from '@/components/project/process/Dev'
 import Results from '@/components/project/Results'
 import Summary from '@/components/project/Summary'
+import CTA from '@/components/project/CTA'
 
 export default {
   components: {
@@ -76,7 +80,8 @@ export default {
     Design,
     Dev,
     Results,
-    Summary
+    Summary,
+    CTA
   },
   data() {
     return {

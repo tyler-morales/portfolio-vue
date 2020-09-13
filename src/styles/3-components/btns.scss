@@ -1,0 +1,21 @@
+.btn {
+  transition: all .3s;
+  cursor: pointer;
+
+  &--cta {
+    @extend .btn;
+    border: 1px solid var(--black);
+    color: var(--black);
+    padding: 16px 32px;
+    font-size: 17px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+
+    &:hover {
+      background-color: var(--black);
+      color: var(--white);
+    }
+  }
+}
