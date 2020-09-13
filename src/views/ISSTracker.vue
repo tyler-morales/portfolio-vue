@@ -40,6 +40,9 @@
 
       <!-- RESULTS -->
       <Results :results="results" :lighthouse="lighthouse" />
+
+      <!-- SUMMARY -->
+      <Summary :summary="summary" />
     </main>
   </div>
 </template>
@@ -57,6 +60,7 @@ import Strategy from '@/components/project/process/Strategy'
 import Design from '@/components/project/process/Design'
 import Dev from '@/components/project/process/Dev'
 import Results from '@/components/project/Results'
+import Summary from '@/components/project/Summary'
 
 export default {
   components: {
@@ -71,7 +75,8 @@ export default {
     Strategy,
     Design,
     Dev,
-    Results
+    Results,
+    Summary
   },
   data() {
     return {
@@ -299,7 +304,10 @@ export default {
           icon: '👁',
           score: 92
         }
-      ]
+      ],
+      summary: {
+        description: `The International Space Station (ISS) is a multi-nation construction project that is the largest single structure humans ever put into space. Its main construction was completed between 1998 and 2011, although the station continually evolves to include new missions and experiments. It has been continuously occupied since Nov. 2, 2000.`
+      }
     }
   }
 }
