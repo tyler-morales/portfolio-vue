@@ -3,7 +3,7 @@
     <h3 class="section-header">Results</h3>
     <h3>Letting the Results Speak for Themselves</h3>
     <img :src="results.image" alt="" />
-    <Lighthouse :lighthouse="lighthouse" />
+    <Lighthouse :lighthouse="lighthouse" :results="results" />
   </section>
 </template>
 

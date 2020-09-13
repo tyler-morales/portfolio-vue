@@ -280,7 +280,8 @@ export default {
         }
       ],
       results: {
-        image: 'https://tmo.codes/images/iss_composite.png'
+        image: 'https://tmo.codes/images/iss_composite.png',
+        lighthouseReport: 'tmo.codes'
       },
       lighthouse: [
         {

@@ -23,6 +23,9 @@
         <span>{{ score.name }} {{ score.icon }}</span>
       </div>
     </div>
+    <a class="link--report " target="_blank" :href="report"
+      >Generate Detailed Report</a
+    >
   </div>
 </template>
 
@@ -31,7 +34,8 @@ import VueCircle from 'vue2-circle-progress/src/index.vue'
 
 export default {
   props: {
-    lighthouse: { type: Array, required: false }
+    lighthouse: { type: Array, required: false },
+    results: { type: Object, required: false }
   },
   components: {
     VueCircle
@@ -50,12 +54,32 @@ export default {
       const DEG = 270
       const RAD = DEG * (Math.PI / 180)
       return RAD
+    },
+    report: function() {
+      let url = this.results.lighthouseReport
+      let link = `https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2F${url}%2F`
+      return link
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
+.title {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.description {
+  margin-top: 5px;
+  max-width: 85%;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+a {
+  margin-top: 50px;
+  margin: 0 auto;
+}
 .lighthouse {
   margin-top: 100px;
 
@@ -75,13 +99,9 @@ export default {
       flex-direction: column;
       align-items: center;
       gap: 20px;
+      color: Rgb($color-tertiary);
+      font-size: 24px;
     }
   }
-}
-span {
-  font-size: 24px;
-}
-.circle {
-  color: Rgb($color-tertiary);
 }
 </style>
