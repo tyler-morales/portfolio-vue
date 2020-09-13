@@ -70,6 +70,10 @@ export default {
   align-items: center;
   gap: 100px;
 
+  h4 {
+    font-weight: 400;
+  }
+
   @include breakpoint(md) {
     flex-direction: column-reverse;
     text-align: center;

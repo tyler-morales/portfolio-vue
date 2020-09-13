@@ -60,6 +60,7 @@ export default {
 
       h4 {
         margin-top: 30px;
+        font-weight: 400;
       }
     }
   }
