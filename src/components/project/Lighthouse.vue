@@ -18,12 +18,13 @@
           :animation="animation"
           insert-mode="append"
           empty-fill="rgba(0, 0, 0, .1)"
+          :fill="updateFillColor(score.score)"
         >
         </vue-circle>
         <span>{{ score.name }} {{ score.icon }}</span>
       </div>
     </div>
-    <a class="link--report " target="_blank" :href="report"
+    <a class="link--report " target="_blank" :href="results.lighthouseReport"
       >Generate Detailed Report</a
     >
   </div>
@@ -48,17 +49,23 @@ export default {
       }
     }
   },
+  methods: {
+    updateFillColor(score) {
+      let gradient
+      if (score > 90) {
+        gradient = { gradient: ['#3aeabb', '#fdd250'] }
+      } else {
+        gradient = { gradient: ['orange', 'yellow'] }
+      }
+      return gradient
+    }
+  },
   computed: {
     getDegAngle: function() {
       // angle from 0 radians
       const DEG = 270
       const RAD = DEG * (Math.PI / 180)
       return RAD
-    },
-    report: function() {
-      let url = this.results.lighthouseReport
-      let link = `https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2F${url}%2F`
-      return link
     }
   }
 }
