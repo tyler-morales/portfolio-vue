@@ -3,7 +3,7 @@
     <h3>Client Objectives</h3>
     <div class="objetive-container">
       <ul>
-        <h4 class="list--header">Problems/ Goals</h4>
+        <h4 class="list--header">Problems</h4>
         <li v-for="(item, index) in objectives.goals" :key="index">
           {{ item }}
         </li>
@@ -33,7 +33,7 @@ export default {
 .objetive-container {
   display: grid;
   gap: 40px;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
 
   @include breakpoint(sm) {
     grid-template-columns: 1fr;
@@ -41,6 +41,8 @@ export default {
 
   li {
     color: Rgba($color-primary / $semi-light);
+    list-style-type: circle;
+    list-style-position: inside;
   }
 }
 </style>

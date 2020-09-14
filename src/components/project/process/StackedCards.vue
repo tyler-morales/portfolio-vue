@@ -36,14 +36,15 @@ export default {
   @include breakpoint(sm) {
   }
   .card-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
     height: auto;
     position: sticky;
     border-radius: 20px;
     margin: 0 auto;
     margin-bottom: 40px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
     top: 100px;
     padding: 3rem;
     box-shadow: var(--shadow-light);

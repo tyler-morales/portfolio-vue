@@ -1,8 +1,12 @@
 <template>
   <div>
     <h3>Design System</h3>
-    <img :src="ui.image" alt="" />
-    <h5>{{ ui.description }}</h5>
+    <div v-for="(img, index) in ui" :key="index">
+      <div>
+        <img :src="img.image" alt="" />
+        <h5>{{ img.description }}</h5>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -10,7 +14,7 @@
 export default {
   props: {
     ui: {
-      type: Object,
+      type: Array,
       required: false
     }
   }
@@ -19,6 +23,6 @@ export default {
 
 <style lang="scss" scoped>
 h5 {
-  margin-top: 20px;
+  margin: 20px 0;
 }
 </style>

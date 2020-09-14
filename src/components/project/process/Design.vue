@@ -5,8 +5,8 @@
       <p>{{ design.description }}</p>
     </div>
     <div class="container">
-      <UI :ui="ui" />
       <Moodboard :moodboard="moodboard" />
+      <UI :ui="ui" />
     </div>
   </section>
 </template>
@@ -22,7 +22,7 @@ export default {
       required: false
     },
     ui: {
-      type: Object,
+      type: Array,
       required: false
     },
     moodboard: {

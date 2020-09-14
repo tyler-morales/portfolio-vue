@@ -92,24 +92,20 @@ export default {
       },
       intro: {
         title: 'Making the Boring Interesting',
-        description: `The International Space Station (ISS) is a multi-nation constructionproject that is the largest single structure humans ever put into space.Its main construction was completed between 1998 and 2011, although thestation continually evolves to include new missions and experiments. Ithas been continuously occupied since Nov. 2, 2000.`
+        description: `After scouring the web for interesting project ideas, I came across an API that tracks the ISS. The current state of ISS tracker online lack any visual modernity. Being a designer and developer, I decided to create a visual interesting representation of where the ISS is located at all times.`
       },
       snippets: [
         {
           name: 'Tech Stack 📚',
-          items: ['HTML', 'SCSS', 'ES6', 'Vue']
+          items: ['HTML', 'SCSS', 'ES6']
         },
         {
           name: 'What I Learned ✏️',
-          items: [
-            'API Intergration',
-            'Async-await Functions',
-            'HTML Data Themes'
-          ]
+          items: ['API Intergration', 'Fetch API', 'HTML Data Themes']
         },
         {
-          name: 'Timeline ⏱',
-          items: ['September-October 2020']
+          name: 'Project Type ☕️',
+          items: ['Personal Project']
         },
         {
           name: 'Codebase 👾',
@@ -117,29 +113,28 @@ export default {
           items: [
             {
               name: 'Github',
-              link: 'https://github.com/'
+              link: 'https://github.com/tyler-morales/iss'
             },
             {
               name: 'Live Site',
-              link: 'https://tmo.codes/'
+              link: 'https://theisstracker.netlify.app/'
             }
           ]
         }
       ],
       situation: {
         description:
-          'We need an interactive and real-time view of the ISS with a modern design',
-        org: '–ISS Comission'
+          'Transform a standard satilate tracker from an early 2000s website to a modern 2020 web app',
+        org: '– Tyler Morales'
       },
       solution: {
-        title:
-          'Translating Data Into a Readable, Digestible & Beautiful Application',
+        title: 'Upgrading Design, Usability and Enjoyment',
         description:
-          'The International Space Station (ISS) is a multi-nation construction project that is the largest single structure humans ever put into space. Its main construction was completed between 1998 and 2011, although the station continually evolves to include new missions and experiments. It has been continuously occupied since Nov. 2, 2000.'
+          'The main goal of this project is to take in data from an API, and transform that data into a beautiful and exicting tool for people interested or who have no idea what or where the International Space Statio is fun to view. Through modernizing the design and implementing the latest Front End features such as the Fetch API & Flexbox and CSS Grid, the web app will be future proof on both fronts'
       },
       process: {
         description:
-          'There is more to design and web development than the mere process of what one sees as the final product. Far before any visual interface is conceived, I meet and collaborate with the client to better understand their goals. Armed with this knowledge, I am able to build smart– incorporating business needs as well as design aesthetics and modern web architecture and technologies to solve the most important needs for the client.'
+          'Each project demands a differnt tatic for a succesful final product. For this project, I wanted to reimagine what a satalite tracker could be. In order to accomplish that, I started the design phase not in mockups, layouts or color patterns, but rather the reassoning and strategy behind how the user would use this tool. From there, I was better able to design and develop a production grade web app. It is important to keep in mind that these steps are not stricly linear in production. Due to the iterative design and development process, oftentimes I will go back and rethink or design key features'
       },
       scope: [
         {
@@ -163,22 +158,22 @@ export default {
         {
           phaseName: 'Development',
           code: true,
-          responsibilities: ['Frontend Development', 'Accessibility Standards']
+          responsibilities: ['Frontend Development', 'API Intergration']
         }
       ],
       discovery: {
-        description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis cum provident velit eaque, pariatur perferendis!`
+        description: `To begin, I started finding the current problems facing existing satalite trackers and defining solutions to them. I came up with my solutions through both general research about what the ISS is and existing ISS trackers.`
       },
       objectives: {
         goals: [
-          'Too much complexity',
-          'Increase number of users',
-          'Match design aesthetic of similar leading companies'
+          'Too many confusing or irrevelant features/ metrics',
+          'Lacking a strong/ modern visual design',
+          'Mobile/ tablet views are unexistent'
         ],
         solutions: [
-          'Too much complexity',
-          'Increase number of users',
-          'Match design aesthetic of similar leading companies'
+          'Design a clear "control pannel" of useful features/ metrics',
+          'Upgrade the design to that of modern space inspired',
+          'Create a responsive layout'
         ]
       },
       competition: [
@@ -206,32 +201,46 @@ export default {
       ],
       strategy: {
         description:
-          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis cum provident velit eaque, pariatur perferendis!',
+          'After general research and objective analysis, I began playing around with how content would fit together and interact. I cemented the metrics I wanted to include and then arranged how they should interact with each other.',
         infoArc: {
-          description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis cum provident velit eaque, pariatur perferendis!`,
-          image: 'https://picsum.photos/id/556/300'
+          description: `This is where I gathered all of the metrics and data points that I wanted to include. This  included, velocity, latitude and longitude coordinates, wheather or not the ISS was covered by the moon (visibility), what country it was currently over and a description of what the ISS is were all essiental to better understanding the ISS.`,
+          image:
+            'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.searchenginejournal.com%2Fwp-content%2Fuploads%2F2019%2F08%2Finformation-architecture-graphic.png&f=1&nofb=1'
         },
         interaction: {
-          description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis cum provident velit eaque, pariatur perferendis!`,
-          image: 'https://picsum.photos/id/292/300'
+          description: `This stage lays out how elements interect with each other and with the user. To execute this, I defined the context of the site: a map. From my research I understood that having a control pannel where users could find the metrics and informaton is usefull. This is the flow. Finally, I was able to get granular and define positioning, layout and overall design. This leads nicely to the next stage of development. `,
+          image:
+            'https://qubstudio.com/wp-content/uploads/2018/09/%D0%9C%D0%BE%D0%BD%D1%82%D0%B0%D0%B6%D0%BD%D0%B0%D1%8F-%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C-1@2x-100-768x574.jpg'
         }
       },
       design: {
-        description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui porro deleniti mollitia facilis nobis esse autem, nesciunt cupiditate molestiae tempore?`
+        description: `After finguring strategy and UX, I am finally able to design. This includes lo-fi wireframes, hi-fi mockups and every design element inbetween. `
       },
-      ui: {
-        image: 'https://picsum.photos/id/529/500',
-        description: 'a description of a picture'
-      },
+      ui: [
+        {
+          image:
+            'https://i.pinimg.com/originals/d8/7a/b5/d87ab59823fbc3f3d493c732fa45888f.png',
+          description: 'A look at the design system'
+        }
+      ],
       moodboard: {
-        image: 'https://picsum.photos/id/526/500',
-        description: 'a description of the moodboard'
+        image:
+          'https://i.pinimg.com/236x/05/00/1b/05001b1346fea9be6590deb24dc5021e.jpg',
+        description: 'Some moodboard ideas'
       },
       dev: {
         description:
-          'A description of something deve related hopefully long enough to make a thorough descripiotn of what I am trying to convey'
+          'Personally, my favorite stage, I can now begin making the project come to life. I will be using the latest web technologies and practices to insure the longevity of this web app.'
       },
       technologies: [
+        {
+          name: 'ES6',
+          logo: 'javascript'
+        },
+        {
+          name: 'SCSS',
+          logo: 'sass'
+        },
         {
           name: 'HTML',
           logo: 'html-5'
@@ -241,64 +250,46 @@ export default {
           logo: 'github-icon'
         },
         {
-          name: 'SCSS',
-          logo: 'sass'
-        },
-        {
           name: 'Netlify',
           logo: 'netlify'
-        },
-        {
-          name: 'ES6',
-          logo: 'javascript'
-        },
-        {
-          name: 'Vue',
-          logo: 'vue'
         }
       ],
       features: [
         {
-          name: 'Flexbox CSS Grid',
+          name: 'API Intergration (Fetch API)',
+          description: `Without a doubt, the Fetch API made it efficent and easy to grab data from the API and display it in the browser. Error checking and having multiple API's display info was made easy with this feature.`
+        },
+        {
+          name: 'Leaflet (JS map library)',
           description:
-            'Flexbox & CSS grid made ispossible and simple to make aresponsive web app, adjusting font,size and elements accordingly'
+            'I used Leaflet to take care of rendering a responsive map. With just a few lines of code I was able to insert an ISS icon and have it move continously (10sec intervals).'
+        },
+        {
+          name: 'Where The ISS & Rest Countries API',
+          description: `The engine of this web app came from Where the ISS's API. This included all of the metrics that are displayed on the control pannel. To get the country flag icons, I used the popular REST Countries API`
         },
         {
           name: 'Flexbox CSS Grid',
           description:
-            'Flexbox & CSS grid made ispossible and simple to make aresponsive web app, adjusting font,size and elements accordingly'
+            'Using the latest css features, I was able to build a fully responsive layout, while maintaining a clean codebase.'
         },
         {
-          name: 'Flexbox CSS Grid',
+          name: 'CSS Transitions',
           description:
-            'Flexbox & CSS grid made ispossible and simple to make aresponsive web app, adjusting font,size and elements accordingly'
+            'In order to make the interface more friendly, I added a couple transitions to the cotrol pannel when it is minified and shows/ hides the more info tab.'
         },
         {
-          name: 'Flexbox CSS Grid',
+          name: 'CSS Custom Properities',
           description:
-            'Flexbox & CSS grid made ispossible and simple to make aresponsive web app, adjusting font,size and elements accordingly'
-        },
-        {
-          name: 'Flexbox CSS Grid',
-          description:
-            'Flexbox & CSS grid made ispossible and simple to make aresponsive web app, adjusting font,size and elements accordingly'
-        },
-        {
-          name: 'Flexbox CSS Grid',
-          description:
-            'Flexbox & CSS grid made ispossible and simple to make aresponsive web app, adjusting font,size and elements accordingly'
+            'Creating a dark theme when the moon covers the ISS was easily implemented by using CSS Custom Properties (variables) and HTML Data-themes. This allowed for easy color pallete switching on all of the components.'
         }
       ],
       results: {
         image: 'https://tmo.codes/images/iss_composite.png',
-        lighthouseReport: 'tmo.codes'
+        lighthouseReport:
+          'https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=http%3A%2F%2Ftheisstracker.netlify.app'
       },
       lighthouse: [
-        {
-          name: 'Speed',
-          icon: '⚡️',
-          score: 90
-        },
         {
           name: 'Performance',
           icon: '💪🏽',
@@ -307,11 +298,21 @@ export default {
         {
           name: 'Accesibility',
           icon: '👁',
-          score: 92
+          score: 88
+        },
+        {
+          name: 'Best Practices',
+          icon: '⚡️',
+          score: 98
+        },
+        {
+          name: 'SEO',
+          icon: '🖥',
+          score: 100
         }
       ],
       summary: {
-        description: `The International Space Station (ISS) is a multi-nation construction project that is the largest single structure humans ever put into space. Its main construction was completed between 1998 and 2011, although the station continually evolves to include new missions and experiments. It has been continuously occupied since Nov. 2, 2000.`
+        description: `Overall, I really enjoyed building this project. I immersed myself in new techbologies to create one cohesive tool for viewing an otherwise boring tracker. I am continually updating this project and making sure it can continue being a usefull tool.`
       }
     }
   }
