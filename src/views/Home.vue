@@ -83,18 +83,18 @@ export default {
       ],
       notableProjects: [
         {
-          title: 'ISS Tracker',
-          image: require('../assets/images/iss_tracker/ISS_thumbnail.jpg'),
-          link: 'https://www.manifestledger.com/'
+          title: 'Text Adventure Game',
+          image: require('../assets/images/game-square.jpg'),
+          link: 'https://textadventure.netlify.app/'
         },
         {
           title: 'Manifest Website',
-          image: require('../assets/images/tik-it/TIKIT_thumbnail.jpg'),
+          image: require('../assets/images/manifest/thumbnail.jpg'),
           link: 'https://www.manifestledger.com/'
         },
         {
-          title: 'Manifest Website',
-          image: 'https://tmo.codes/images/manifest_website.jpg',
+          title: 'Travel Journal',
+          image: require('../assets/images/ecuador.jpg'),
           link: 'https://www.manifestledger.com/'
         }
       ],
@@ -121,8 +121,8 @@ export default {
       ],
       about: {
         title: 'Hello, World 🌎!',
-        subTitle: 'I’m a front end develop from Chicago',
-        image: 'https://tmo.codes/images/profile.png',
+        subTitle: 'I’m a front end developer from Chicago',
+        image: require('../assets/images/profile.png'),
         bio: [
           `Ever since a young age, I’ve been interested intechnology and design. From growing up with the internet, building countless projects and constantly having an urge to create anything, purposeful design has been important to me. Ultimately, this fascination with creativity and design has led me to find web development the perfect landscape to extend mypassion towards building interactive and intuitive web experiences.`,
           `Along with development, I am very active in the developer community online and in local Chicago Meetups. IN, amongst others, build up and motivate other like minded individuals, document our progress and learn the latest technologies with developers globally! Currently, I am studying Web Development and Design at Columbia College Chicago.`

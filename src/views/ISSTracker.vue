@@ -285,7 +285,7 @@ export default {
         }
       ],
       results: {
-        image: 'https://tmo.codes/images/iss_composite.png',
+        image: require('../assets/images/iss_tracker/iss_composite.png'),
         lighthouseReport:
           'https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=http%3A%2F%2Ftheisstracker.netlify.app'
       },
