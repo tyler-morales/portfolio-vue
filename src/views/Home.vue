@@ -104,19 +104,19 @@ export default {
           description:
             'Look no further for someone to design and build your ideas',
           tags: ['Adobe CC', 'Figma', 'Graphic Design'],
-          image: 'https://tmo.codes/icons/unicorn.png'
+          image: require('../assets/icons/unicorn.png')
         },
         {
           title: 'Cutting Edge Tech',
           description: 'Always learning the latest updates & technologies',
           tags: ['HTML', 'CSS/SCSS', 'HUGO', 'ES6'],
-          image: 'https://tmo.codes/icons/computer.png'
+          image: require('../assets/icons/computer.png')
         },
         {
           title: 'Strategic Thinker',
           description: 'Each stage is meticulously planned and deliberate',
           tags: ['Research', 'Design', 'Development'],
-          image: 'https://tmo.codes/icons/atom.png'
+          image: require('../assets/icons/atom.png')
         }
       ],
       about: {
