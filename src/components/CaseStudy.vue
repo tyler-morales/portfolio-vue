@@ -12,7 +12,7 @@
           >{{ tag }}</span
         >
       </div>
-      <a href="https://tik-it.netlify.app/" target="_blank">
+      <a :href="caseStudy.link" target="_blank">
         <span id="view-project" class="link--view-project"
           >View Project
           <arrow-right-icon size="1.25x" class="icon"></arrow-right-icon>

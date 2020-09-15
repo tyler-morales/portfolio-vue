@@ -69,15 +69,17 @@ export default {
           type: 'Web App',
           title: 'Countdown Timer',
           description: 'A beautiful way to view a range of countdown timers',
-          image: 'https://tmo.codes/images/game-laptop-l.png',
-          tags: ['HTML 5', 'SCSS', 'ES6']
+          image: require('../assets/images/tik-it/TIKIT_thumbnail.jpg'),
+          tags: ['Vue', 'SCSS', 'ES6'],
+          link: 'https://tik-it.netlify.app/'
         },
         {
-          type: 'Productivity Tool',
-          title: 'Random New Tab',
-          description: 'A beautiful New Tab Dashboard',
-          image: 'https://tmo.codes/images/iss_mockup-tab.png',
-          tags: ['Unsplash API', 'SCSS', 'ES6', 'Vue'],
+          type: 'Marketing Website',
+          title: 'Manifest',
+          description: 'A frictionless way to transfer retirement accounts',
+          image: require('../assets/images/manifest/manifest_thumbnail.png'),
+          tags: ['Jekyll', 'SCSS', 'Team Project'],
+          link: 'https://www.manifestledger.com/',
           reverse: true
         }
       ],
