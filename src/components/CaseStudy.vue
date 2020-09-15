@@ -12,12 +12,12 @@
           >{{ tag }}</span
         >
       </div>
-      <a :href="caseStudy.link" target="_blank">
+      <router-link :to="caseStudy.path">
         <span id="view-project" class="link--view-project"
           >View Project
           <arrow-right-icon size="1.25x" class="icon"></arrow-right-icon>
         </span>
-      </a>
+      </router-link>
     </div>
     <img :src="caseStudy.image" class="case-study--img" />
   </div>

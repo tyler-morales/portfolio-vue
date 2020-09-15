@@ -16,6 +16,13 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ '../views/ISSTracker.vue')
+  },
+  {
+    path: '/manifest',
+    name: 'Manifest',
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "about" */ '../views/Manifest.vue')
   }
 ]
 
@@ -27,7 +34,11 @@ const router = new VueRouter({
     if (to.hash) {
       return {
         selector: to.hash
-        // , offset: { x: 0, y: 10 }
+      }
+    } else {
+      return {
+        x: 0,
+        y: 0
       }
     }
   }

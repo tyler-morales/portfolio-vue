@@ -66,21 +66,22 @@ export default {
     return {
       caseStudies: [
         {
-          type: 'Web App',
-          title: 'Countdown Timer',
-          description: 'A beautiful way to view a range of countdown timers',
-          image: require('../assets/images/tik-it/TIKIT_thumbnail.jpg'),
-          tags: ['Vue', 'SCSS', 'ES6'],
-          link: 'https://tik-it.netlify.app/'
-        },
-        {
           type: 'Marketing Website',
           title: 'Manifest',
           description: 'A frictionless way to transfer retirement accounts',
           image: require('../assets/images/manifest/manifest_thumbnail.png'),
           tags: ['Jekyll', 'SCSS', 'Team Project'],
-          link: 'https://www.manifestledger.com/',
+          path: '/manifest',
           reverse: true
+        },
+        {
+          type: 'Web App',
+          title: 'Countdown Timer',
+          description: 'A beautiful way to view a range of countdown timers',
+          image: require('../assets/images/tik-it/TIKIT_thumbnail.jpg'),
+          tags: ['Vue', 'SCSS', 'ES6'],
+          path: '/tikit',
+          link: 'https://tik-it.netlify.app/'
         }
       ],
       notableProjects: [
@@ -91,7 +92,7 @@ export default {
         },
         {
           title: 'Manifest Website',
-          image: require('../assets/images/manifest/thumbnail.jpg'),
+          image: require('../assets/images/manifest/manifest_thumbnail.png'),
           link: 'https://www.manifestledger.com/'
         },
         {

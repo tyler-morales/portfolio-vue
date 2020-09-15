@@ -2,10 +2,10 @@
   <section class="process-section">
     <div>
       <h3 class="section-header">Discovery</h3>
-      <p>{{ discovery.description }}</p>
+      <p v-if="discovery.description">{{ discovery.description }}</p>
     </div>
     <Objectives :objectives="objectives" />
-    <Competition :competition="competition" />
+    <Competition v-if="competition" :competition="competition" />
   </section>
 </template>
 
