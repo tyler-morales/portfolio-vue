@@ -139,37 +139,27 @@ export default {
         }
       ],
       discovery: {
-        description: `To begin, I started finding the current problems facing existing satalite trackers and defining solutions to them. I came up with my solutions through both general research about what the ISS is and existing ISS trackers.`
+        description: `To begin, I started to look over the original codebase and try to understand what had already been built and what needed to be updated. From there, I took Sanjana's desgins and implemented them into to codebase`
       },
       objectives: {
         goals: [
-          'Too many confusing or irrevelant features/ metrics',
-          'Lacking a strong/ modern visual design',
-          'Mobile/ tablet views are unexistent'
+          'Outdated layouts (CSS)',
+          'Lacking a strong cohesive architecture',
+          'Needs additional content'
         ],
         solutions: [
-          'Design a clear "control pannel" of useful features/ metrics',
-          'Upgrade the design to that of modern space inspired',
-          'Create a responsive layout'
+          'Implement Flexbox & CSS Grid',
+          'Use common classes to refactor code',
+          'Build new elements from scratch'
         ]
       },
       strategy: {
         description:
-          'After general research and objective analysis, I began playing around with how content would fit together and interact. I cemented the metrics I wanted to include and then arranged how they should interact with each other.',
-        infoArc: {
-          description: `This is where I gathered all of the metrics and data points that I wanted to include. This  included, velocity, latitude and longitude coordinates, wheather or not the ISS was covered by the moon (visibility), what country it was currently over and a description of what the ISS is were all essiental to better understanding the ISS.`,
-          image:
-            'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.searchenginejournal.com%2Fwp-content%2Fuploads%2F2019%2F08%2Finformation-architecture-graphic.png&f=1&nofb=1'
-        },
-        interaction: {
-          description: `This stage lays out how elements interect with each other and with the user. To execute this, I defined the context of the site: a map. From my research I understood that having a control pannel where users could find the metrics and informaton is usefull. This is the flow. Finally, I was able to get granular and define positioning, layout and overall design. This leads nicely to the next stage of development. `,
-          image:
-            'https://qubstudio.com/wp-content/uploads/2018/09/%D0%9C%D0%BE%D0%BD%D1%82%D0%B0%D0%B6%D0%BD%D0%B0%D1%8F-%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C-1@2x-100-768x574.jpg'
-        }
+          'After general research and objective analysis, I began playing around with how content would fit together and interact. I cemented the metrics I wanted to include and then arranged how they should interact with each other.'
       },
       dev: {
         description:
-          'Personally, my favorite stage, I can now begin making the project come to life. I will be using the latest web technologies and practices to insure the longevity of this web app.'
+          'After discussing goals, designs, and going through the codebase, I quickly moved on to development. The most difficult add the additonal designs without breaking the site. I decided I needed to implement a few archicture standards such as BEM and css variables to make the process streamlined.'
       },
       technologies: [
         {
@@ -191,8 +181,8 @@ export default {
       ],
       features: [
         {
-          name: 'API Intergration (Fetch API)',
-          description: `Without a doubt, the Fetch API made it efficent and easy to grab data from the API and display it in the browser. Error checking and having multiple API's display info was made easy with this feature.`
+          name: 'Google Form Intergration',
+          description: `I linked up `
         },
         {
           name: 'Leaflet (JS map library)',

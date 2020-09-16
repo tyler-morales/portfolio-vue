@@ -1,5 +1,5 @@
 <template>
-  <section class="intro">
+  <section class="intro" data-aos="fade-up">
     <h2 class="intro--title">{{ intro.title }}</h2>
     <p>{{ intro.description }}</p>
   </section>
