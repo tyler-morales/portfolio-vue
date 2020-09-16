@@ -87,7 +87,7 @@ export default {
       notableProjects: [
         {
           title: 'Text Adventure Game',
-          image: require('../assets/images/game-square.jpg'),
+          image: require('../assets/images/textAdventure__thumb.jpg'),
           link: 'https://textadventure.netlify.app/'
         },
         {
