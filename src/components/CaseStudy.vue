@@ -36,26 +36,30 @@ export default {
   components: {
     ArrowRightIcon
   },
-  mounted() {
-    this.$nextTick(function() {
-      window.addEventListener('resize', this.getWindowWidth)
-
-      //Init
-      this.getWindowWidth()
-    })
+  data() {
+    return {
+      window: {
+        width: 0
+      }
+    }
   },
-
+  created() {
+    window.addEventListener('resize', this.handleResize)
+    this.handleResize()
+    this.caseStudy.reverse = false
+  },
   methods: {
-    getWindowWidth() {
-      if (screen.width > 992) {
+    handleResize() {
+      if (window.innerWidth >= 992) {
         this.caseStudy.reverse = true
       } else {
         this.caseStudy.reverse = false
       }
     }
   },
-  beforeDestroy() {
-    window.removeEventListener('resize', this.getWindowWidth)
+  mounted() {
+    //Init
+    this.caseStudy.reverse = true
   }
 }
 </script>

@@ -44,6 +44,12 @@ $semi-light: 70%;
     }
   }
 
+  @else if $class==xl {
+    @media (max-width: 1440px) {
+      @content;
+    }
+  }
+
   @else {
     @warn "Breakpoint mixin supports: xs, sm, md, lg";
   }

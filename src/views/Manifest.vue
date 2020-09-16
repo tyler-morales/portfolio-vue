@@ -79,7 +79,7 @@ export default {
       hero: {
         title: 'Manifest',
         subTitle: 'Making 401(k) Transfers Seamless',
-        image: require('../assets/images/manifest/manifest_thumbnail.png')
+        image: require('../assets/images/manifest/banner-lg.jpg')
       },
       intro: {
         title: 'Maximizing Retirement Outcomes.',

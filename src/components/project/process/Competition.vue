@@ -24,8 +24,10 @@
         </ul>
       </vue-glide-slide>
       <template slot="control">
-        <button data-glide-dir="<">prev</button>
-        <button data-glide-dir=">">next</button>
+        <div class="custom-class">
+          <button data-glide-dir="<">prev</button>
+          <button data-glide-dir=">">next</button>
+        </div>
       </template>
     </vue-glide>
     <!-- Vue Glide -->
@@ -127,13 +129,20 @@ export default {
     }
   }
 
+  // control button group
+  .custom-class {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+  }
+
   // control button
   [data-glide-dir] {
     padding: 8px 15px;
     border: 2px solid black;
     transition: all 0.3s;
     margin-top: 30px;
-    margin-right: 20px;
     font-size: 16px;
 
     &:hover {

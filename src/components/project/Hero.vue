@@ -17,12 +17,24 @@ export default {
       required: true
     }
   },
-  computed: {
-    bgImage() {
-      return {
-        backgroundImage: `url(${this.hero.image})`,
-        backgrountRepeat: 'no-repeat',
-        backgroundSize: 'cover'
+  data() {
+    return {
+      window: {
+        width: 0
+      },
+      bgImage: ''
+    }
+  },
+  created() {
+    window.addEventListener('resize', this.handleResize)
+    this.handleResize()
+  },
+  methods: {
+    handleResize() {
+      if (window.innerWidth <= 600) {
+        this.bgImage = `backgroundImage: linear-gradient(to bottom,rgba(245, 246, 252, 0) 45%,rgb(0, 0, 0) 100%), url(${this.hero.image})`
+      } else {
+        this.bgImage = `backgroundImage: url(${this.hero.image})`
       }
     }
   }
@@ -31,8 +43,14 @@ export default {
 
 <style lang="scss" scoped>
 .hero {
-  height: 720px;
+  height: 900px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
+  @include breakpoint(xl) {
+    height: 720px;
+  }
   @include breakpoint(md) {
     height: 360px;
   }
@@ -43,12 +61,21 @@ export default {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 240px;
+    gap: 440px;
     align-items: center;
+
+    @include breakpoint(xl) {
+      gap: 340px;
+    }
+
+    @include breakpoint(md) {
+      gap: 240px;
+    }
 
     @include breakpoint(sm) {
       grid-template-columns: 1fr;
       gap: 0;
+      align-content: end;
       text-align: center;
     }
 
@@ -58,6 +85,10 @@ export default {
       color: var(--white);
       line-height: 75px;
 
+      @include breakpoint(sm) {
+        grid-column: 1;
+      }
+
       h4 {
         margin-top: 30px;
         font-weight: 400;
@@ -65,16 +96,4 @@ export default {
     }
   }
 }
-
-// .multiline-strikethrough {
-//   display: inline;
-//   // font-size: 4rem;
-//   // line-height 1em;
-//   background-image: linear-gradient(
-//     transparent 0.8ex,
-//     Rgb($color-secondary) 0.8ex,
-//     Rgb($color-secondary) 1.5ex,
-//     transparent 1.5ex
-//   );
-// }
 </style>
