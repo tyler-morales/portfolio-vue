@@ -88,7 +88,8 @@ export default {
       hero: {
         title: 'International Space Station Tracker',
         subTitle: 'A real time satellite tracker',
-        image: require('../assets/images/iss_tracker/banner.jpg')
+        image: require('../assets/images/iss_tracker/banner.jpg'),
+        webp: require('../assets/images/iss_tracker/banner.webp')
       },
       intro: {
         title: 'Making the Boring Interesting',
