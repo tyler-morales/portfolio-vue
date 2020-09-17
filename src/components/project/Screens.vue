@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="screens">
     <div class="grid">
       <div class="screen" v-for="(screen, index) in screens" :key="index">
         <img @click="showSingle(screen.image)" :src="screen.image" alt="" />
@@ -52,11 +52,7 @@ export default {
 
 <style lang="scss" scoped>
 .grid {
-  // margin-top: 100px;
   padding: 50px;
-  // display: grid;
-  // grid-template-columns: repeat(2, 1fr);
-  // gap: 50px;
   column-count: 2;
   column-gap: 50px;
   max-height: 1200px;
