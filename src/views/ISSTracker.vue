@@ -188,7 +188,8 @@ export default {
             'Comprehensive metrics',
             'Info overload'
           ],
-          image: require('../assets/images/iss_tracker/competition/ny2o.jpg')
+          image: require('../assets/images/iss_tracker/competition/ny2o.jpg'),
+          webp: require('../assets/images/iss_tracker/competition/ny2o.webp')
         },
         {
           name: 'European Space Agency',
@@ -197,7 +198,8 @@ export default {
           link:
             'https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/International_Space_Station/Where_is_the_International_Space_Station',
           keyFeatures: ['Outdated UI', 'Very slow', 'A widget'],
-          image: require('../assets/images/iss_tracker/competition/esa.jpg')
+          image: require('../assets/images/iss_tracker/competition/esa.jpg'),
+          webp: require('../assets/images/iss_tracker/competition/esa.webp')
         },
         {
           name: 'ISS Tracker',
@@ -205,7 +207,8 @@ export default {
             'Placing the metrics around the perimeter of the web app, it is difficult to get a quick glance of the most important information.',
           link: 'http://www.isstracker.com/',
           keyFeatures: ['Outdated UI', 'Good UX', 'Feature rich'],
-          image: require('../assets/images/iss_tracker/competition/isstracker.jpg')
+          image: require('../assets/images/iss_tracker/competition/isstracker.jpg'),
+          webp: require('../assets/images/iss_tracker/competition/isstracker.webp')
         }
       ],
       strategy: {
@@ -294,7 +297,8 @@ export default {
         }
       ],
       results: {
-        image: require('../assets/images/iss_tracker/iss_composite.png'),
+        image: require('../assets/images/iss_tracker/composite.png'),
+        webp: require('../assets/images/iss_tracker/composite.webp'),
         lighthouseReport:
           'https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=http%3A%2F%2Ftheisstracker.netlify.app'
       },

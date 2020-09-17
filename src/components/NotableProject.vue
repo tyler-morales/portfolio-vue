@@ -8,7 +8,7 @@
       >
         <picture loading="lazy">
           <source type="image/webp" :srcset="notableProject.webp" />
-          <img :src="notableProject.image" />
+          <img :src="notableProject.image" :alt="notableProject.title" />
         </picture>
       </a>
       <external-link-icon

@@ -11,7 +11,7 @@
     </router-link>
     <picture class="hero--img">
       <source type="image/webp" :srcset="hero.webp" />
-      <img :src="hero.image" />
+      <img :src="hero.image" :alt="hero.name" />
     </picture>
   </section>
 </template>

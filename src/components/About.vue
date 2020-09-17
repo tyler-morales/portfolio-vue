@@ -5,7 +5,7 @@
       <p class="sub-title">{{ about.subTitle }}</p>
       <picture loading="lazy">
         <source type="image/webp" :srcset="about.webp" />
-        <img loading="lazy" :src="about.image" />
+        <img loading="lazy" :src="about.image" alt="Profile Image" />
       </picture>
     </div>
 
@@ -38,19 +38,22 @@
     <div class="grid__socials">
       <h2>Connect</h2>
       <div class="grid__socials__icons u-mt">
-        <a href="https://github.com/tyler-morales">
+        <a href="https://github.com/tyler-morales" aria-label="link">
           <github-icon size="3x" class="icon"></github-icon>
         </a>
-        <a href="https://www.instagram.com/tmo.codes/">
+        <a href="https://www.instagram.com/tmo.codes/" aria-label="link">
           <instagram-icon size="3x" class="icon"></instagram-icon>
         </a>
-        <a href="https://medium.com/@tmorales">
+        <a href="https://medium.com/@tmorales" aria-label="link">
           <codepen-icon size="3x" class="icon"></codepen-icon>
         </a>
-        <a href="mailto:moratyle@gmail.com">
+        <a href="mailto:moratyle@gmail.com" aria-label="link">
           <mail-icon size="3x" class="icon"></mail-icon>
         </a>
-        <a href="https://www.linkedin.com/in/tyler-morales-web-dev/">
+        <a
+          href="https://www.linkedin.com/in/tyler-morales-web-dev/"
+          aria-label="link"
+        >
           <linkedin-icon size="3x" class="icon"></linkedin-icon>
         </a>
       </div>

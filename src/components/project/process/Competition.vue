@@ -11,7 +11,10 @@
       <vue-glide-slide v-for="(competitor, index) in competition" :key="index">
         <h4>{{ competitor.name }}</h4>
         <p>{{ competitor.description }}</p>
-        <img :src="competitor.image" />
+        <picture>
+          <source type="image/webp" :srcset="competitor.webp" />
+          <img :src="competitor.image" />
+        </picture>
         <figcaption>
           <a target="_blank" :href="competitor.link">{{ competitor.name }}</a>
         </figcaption>

@@ -2,7 +2,10 @@
   <section>
     <h3 class="section-header">Results</h3>
     <h3>Letting the Results Speak for Themselves</h3>
-    <img :src="results.image" alt="" />
+    <picture>
+      <source type="image/webp" :srcset="results.webp" />
+      <img :src="results.image" />
+    </picture>
     <Screens :screens="screens" />
     <Lighthouse :lighthouse="lighthouse" :results="results" />
   </section>

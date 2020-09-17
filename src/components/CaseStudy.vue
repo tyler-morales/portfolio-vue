@@ -21,7 +21,7 @@
     </div>
     <picture loading="lazy" class="case-study--img">
       <source type="image/webp" :srcset="caseStudy.webp" />
-      <img :src="caseStudy.image" />
+      <img :src="caseStudy.image" :alt="caseStudy.title" />
     </picture>
   </div>
 </template>
