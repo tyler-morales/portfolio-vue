@@ -7,7 +7,7 @@
       </div>
     </div>
 
-    <!-- all props & events -->
+    <!-- LIGHTBOX -->
     <vue-easy-lightbox
       escDisabled
       moveDisabled
