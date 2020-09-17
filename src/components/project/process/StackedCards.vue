@@ -1,6 +1,6 @@
 <template>
   <!-- STACKED CARDS -->
-  <div class="vertical-sliding-cards">
+  <div v-if="strategy.infoArc" class="vertical-sliding-cards">
     <section class="card-item">
       <div class="card-item__text">
         <h3 class="card-item__text--heading">Information Architecture</h3>

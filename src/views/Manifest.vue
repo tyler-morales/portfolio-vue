@@ -32,7 +32,7 @@
       <Dev :dev="dev" :technologies="technologies" :features="features" />
 
       <!-- RESULTS -->
-      <Results :results="results" :lighthouse="lighthouse" />
+      <Results :results="results" :lighthouse="lighthouse" :screens="screens" />
 
       <!-- SUMMARY -->
       <Summary :summary="summary" />
@@ -210,10 +210,23 @@ export default {
         }
       ],
       results: {
-        image: require('../assets/images/iss_tracker/iss_composite.png'),
         lighthouseReport:
           'https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=http%3A%2F%2Ftheisstracker.netlify.app'
       },
+      screens: [
+        {
+          image: require('../assets/images/manifest/home.png'),
+          description: 'Home'
+        },
+        {
+          image: require('../assets/images/manifest/about.png'),
+          description: 'About'
+        },
+        {
+          image: require('../assets/images/manifest/contact.png'),
+          description: 'Contact Form'
+        }
+      ],
       lighthouse: [
         {
           name: 'Performance',
