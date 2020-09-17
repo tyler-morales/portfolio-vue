@@ -193,6 +193,10 @@ export default {
           description: `I linked up the contact form to a google form API that stored the results in a Google Drive Spreedsheet. `
         },
         {
+          name: 'Impact Calculator',
+          description: `My favorite feature on this project was building the Impacat Calculator. With plain JS, I implemented a simple calculator that allows users to visually see how much money they can save.`
+        },
+        {
           name: 'Jekyll',
           description:
             'The existing codebase used Jekyll, a static site generator to create the site. I adopted this and further refactored and updated content. '
@@ -214,7 +218,7 @@ export default {
       ],
       results: {
         lighthouseReport:
-          'https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=http%3A%2F%2Ftheisstracker.netlify.app'
+          'https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fwww.manifestledger.com%2F'
       },
       screens: [
         {
@@ -228,6 +232,10 @@ export default {
         {
           image: require('../assets/images/manifest/contact.png'),
           description: 'Contact Form'
+        },
+        {
+          image: require('../assets/images/manifest/impact.png'),
+          description: 'Impact Calculator'
         }
       ],
       lighthouse: [
@@ -239,12 +247,12 @@ export default {
         {
           name: 'Accesibility',
           icon: '👁',
-          score: 88
+          score: 98
         },
         {
           name: 'Best Practices',
           icon: '⚡️',
-          score: 98
+          score: 100
         },
         {
           name: 'SEO',
@@ -253,7 +261,7 @@ export default {
         }
       ],
       summary: {
-        description: `Overall, I really enjoyed building this project. I immersed myself in new techbologies to create one cohesive tool for viewing an otherwise boring tracker. I am continually updating this project and making sure it can continue being a usefull tool.`
+        description: `Overall, I enjoyed working on a real project. This was a great opportunity to get a taste of Front End Development in the real world. I greatly upgraded my skills in Git/ Github, communication and development.`
       }
     }
   }

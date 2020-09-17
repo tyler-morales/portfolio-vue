@@ -2,8 +2,8 @@
   <div v-if="screens">
     <div class="grid">
       <div class="screen" v-for="(screen, index) in screens" :key="index">
-        <img @click="showSingle(screen.image)" :src="screen.image" alt="" />
         <span>{{ screen.description }}</span>
+        <img @click="showSingle(screen.image)" :src="screen.image" alt="" />
       </div>
     </div>
 
@@ -79,7 +79,7 @@ export default {
   }
   span {
     display: inline-block;
-    margin-top: 10px;
+    margin-bottom: 10px;
   }
   img {
     box-shadow: var(--shadow-md);
