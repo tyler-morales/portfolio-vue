@@ -8,6 +8,9 @@ import 'vue-glide-js/dist/vue-glide.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
+import Lightbox from 'vue-easy-lightbox'
+
+Vue.use(Lightbox)
 Vue.use(VueGlide)
 Vue.config.productionTip = false
 
