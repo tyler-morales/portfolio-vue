@@ -4,25 +4,25 @@ import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
-const routes = [
-  {
+const routes = [{
     path: '/',
     name: 'Home',
     component: Home
   },
   {
-    path: '/iss_tracker',
+    path: '/isstracker',
     name: 'ISSTracker',
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ '../views/ISSTracker.vue')
+    component: () => import('../views/IssTracker.vue')
   },
   {
     path: '/manifest',
     name: 'Manifest',
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ '../views/Manifest.vue')
+    component: () => import('../views/Manifest.vue')
+  },
+  {
+    path: '/tikit',
+    name: 'TikIt',
+    component: () => import('../views/TikIt.vue')
   }
 ]
 

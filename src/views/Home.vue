@@ -68,7 +68,7 @@ export default {
         type: 'Web App',
         name: 'ISS Tracker',
         description: 'A real time satellite tracker',
-        link: '/iss_tracker',
+        link: '/isstracker',
         image: require('../assets/images/iss_tracker/thumbnail.jpg'),
         webp: require('../assets/images/iss_tracker/thumbnail.webp')
       },
@@ -90,8 +90,7 @@ export default {
           image: require('../assets/images/tik-it/thumbnail.jpg'),
           webp: require('../assets/images/tik-it/thumbnail.webp'),
           tags: ['Vue', 'SCSS', 'ES6'],
-          path: '/tikit',
-          link: 'https://tik-it.netlify.app/'
+          path: '/tikit'
         }
       ],
       notableProjects: [
