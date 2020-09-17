@@ -82,7 +82,7 @@ export default {
         image: require('../assets/images/manifest/banner-lg.jpg')
       },
       intro: {
-        title: 'Maximizing Retirement Outcomes.',
+        title: 'Maximizing Retirement Outcomes',
         description: `Manifest is a small FinTech company based in Hyde Park, IL. It helps manage retirement accounts as people switch between jobs and makes that process streamline and easy. I was tasked with updating their current website to promote it's features, tell the company's story and implement a contact form.`
       },
       snippets: [
@@ -135,7 +135,11 @@ export default {
         {
           phaseName: 'Development',
           code: true,
-          responsibilities: ['Frontend Development', 'Repository Migration']
+          responsibilities: [
+            'Frontend Development',
+            'Repository Migration',
+            'SEO'
+          ]
         }
       ],
       discovery: {
@@ -167,6 +171,10 @@ export default {
           logo: 'jekyll'
         },
         {
+          name: 'Javascript',
+          logo: 'javascript'
+        },
+        {
           name: 'SCSS',
           logo: 'sass'
         },
@@ -182,16 +190,16 @@ export default {
       features: [
         {
           name: 'Google Form Intergration',
-          description: `I linked up `
+          description: `I linked up the contact form to a google form API that stored the results in a Google Drive Spreedsheet. `
         },
         {
-          name: 'Leaflet (JS map library)',
+          name: 'Jekyll',
           description:
-            'I used Leaflet to take care of rendering a responsive map. With just a few lines of code I was able to insert an ISS icon and have it move continously (10sec intervals).'
+            'The existing codebase used Jekyll, a static site generator to create the site. I adopted this and further refactored and updated content. '
         },
         {
-          name: 'Where The ISS & Rest Countries API',
-          description: `The engine of this web app came from Where the ISS's API. This included all of the metrics that are displayed on the control pannel. To get the country flag icons, I used the popular REST Countries API`
+          name: 'BEM (Block Element Modifier)',
+          description: `Although not a huge site, many styling issues could be solve with the BEM Methodology which made it simple to define common styles that would reach the entire site. `
         },
         {
           name: 'Flexbox CSS Grid',
@@ -199,14 +207,9 @@ export default {
             'Using the latest css features, I was able to build a fully responsive layout, while maintaining a clean codebase.'
         },
         {
-          name: 'CSS Transitions',
+          name: 'AOS (Animate on Scroll)',
           description:
-            'In order to make the interface more friendly, I added a couple transitions to the cotrol pannel when it is minified and shows/ hides the more info tab.'
-        },
-        {
-          name: 'CSS Custom Properities',
-          description:
-            'Creating a dark theme when the moon covers the ISS was easily implemented by using CSS Custom Properties (variables) and HTML Data-themes. This allowed for easy color pallete switching on all of the components.'
+            'To add just a sprinkle of motion, I used the AOS library to animate text and images when the user scrolls down the page.'
         }
       ],
       results: {

@@ -55,19 +55,23 @@ export default {
   padding: 50px;
   column-count: 2;
   column-gap: 50px;
-  max-height: 1200px;
-  background-color: #f2f5ff;
-  // background-image: url('https://images.unsplash.com/photo-1550895030-823330fc2551?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');
+  min-height: min-content;
+  background-color: Rgba($color-secondary / $lighten);
 
   @include breakpoint(sm) {
     column-count: 1;
     max-height: 100%;
     column-gap: 20px;
     padding: 20px;
+    background-color: inherit;
   }
 
-  .screen {
+  .screen:not(last-child) {
     margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     @include breakpoint(sm) {
       margin-bottom: 20px;
