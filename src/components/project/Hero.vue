@@ -34,7 +34,7 @@ export default {
       if (window.innerWidth <= 600) {
         this.bgImage = `backgroundImage: linear-gradient(to bottom,rgba(245, 246, 252, 0) 45%,rgb(0, 0, 0) 100%), url(${this.hero.image})`
       } else {
-        this.bgImage = `backgroundImage: url(${this.hero.image})`
+        this.bgImage = `backgroundImage: url(${this.hero.webp})`
       }
     }
   }

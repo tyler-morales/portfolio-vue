@@ -19,7 +19,10 @@
         </span>
       </router-link>
     </div>
-    <img :src="caseStudy.image" class="case-study--img" />
+    <picture loading="lazy" class="case-study--img">
+      <source type="image/webp" :srcset="caseStudy.webp" />
+      <img :src="caseStudy.image" />
+    </picture>
   </div>
 </template>
 

@@ -3,7 +3,10 @@
     <div class="grid">
       <div class="screen" v-for="(screen, index) in screens" :key="index">
         <span>{{ screen.description }}</span>
-        <img @click="showSingle(screen.image)" :src="screen.image" alt="" />
+        <picture @click="showSingle(screen.webp)">
+          <source type="image/webp" :srcset="screen.webp" />
+          <img :src="screen.image" />
+        </picture>
       </div>
     </div>
 

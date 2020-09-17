@@ -3,7 +3,10 @@
     <div class="grid__img">
       <h2>{{ about.title }}</h2>
       <p class="sub-title">{{ about.subTitle }}</p>
-      <img :src="about.image" alt="" />
+      <picture loading="lazy">
+        <source type="image/webp" :srcset="about.webp" />
+        <img loading="lazy" :src="about.image" />
+      </picture>
     </div>
 
     <div class="grid__skills">

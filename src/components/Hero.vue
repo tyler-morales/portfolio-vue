@@ -1,25 +1,27 @@
 <template>
   <section class="hero">
-    <span class="project-type">Web app</span>
-    <h1>ISS Tracker</h1>
-    <h3>A real time satellite tracker</h3>
-    <router-link to="/iss_tracker">
+    <span class="project-type">{{ hero.type }}</span>
+    <h1>{{ hero.name }}</h1>
+    <h3>{{ hero.description }}</h3>
+    <router-link :to="hero.link">
       <span id="view-project" class="link--view-project"
         >View Case Study
         <arrow-right-icon size="1.25x" class="icon"></arrow-right-icon>
       </span>
     </router-link>
-    <img
-      src="../assets/images/iss_tracker/ISS_thumbnail.jpg"
-      class="hero--img"
-      alt="International Space Station Tracker Image Mockup"
-    />
+    <picture class="hero--img">
+      <source type="image/webp" :srcset="hero.webp" />
+      <img :src="hero.image" />
+    </picture>
   </section>
 </template>
 
 <script>
 import { ArrowRightIcon } from 'vue-feather-icons'
 export default {
+  props: {
+    hero: { type: Object, required: false }
+  },
   components: {
     ArrowRightIcon
   }

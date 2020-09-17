@@ -79,7 +79,8 @@ export default {
       hero: {
         title: 'Manifest',
         subTitle: 'Making 401(k) Transfers Seamless',
-        image: require('../assets/images/manifest/banner-lg.jpg')
+        image: require('../assets/images/manifest/banner-lg.jpg'),
+        webp: require('../assets/images/manifest/banner-lg.webp')
       },
       intro: {
         title: 'Maximizing Retirement Outcomes',
@@ -223,18 +224,22 @@ export default {
       screens: [
         {
           image: require('../assets/images/manifest/home.png'),
+          webp: require('../assets/images/manifest/home.webp'),
           description: 'Home'
         },
         {
           image: require('../assets/images/manifest/about.png'),
+          webp: require('../assets/images/manifest/about.webp'),
           description: 'About'
         },
         {
           image: require('../assets/images/manifest/contact.png'),
+          webp: require('../assets/images/manifest/contact.webp'),
           description: 'Contact Form'
         },
         {
           image: require('../assets/images/manifest/impact.png'),
+          webp: require('../assets/images/manifest/impact.webp'),
           description: 'Impact Calculator'
         }
       ],

@@ -1,7 +1,7 @@
 <template>
   <div id="home" class="home">
     <!-- HERO -->
-    <Hero />
+    <Hero :hero="hero" />
 
     <!-- CASE STUDIES -->
     <section id="projects" class="case-studies">
@@ -64,12 +64,21 @@ export default {
   },
   data() {
     return {
+      hero: {
+        type: 'Web App',
+        name: 'ISS Tracker',
+        description: 'A real time satellite tracker',
+        link: '/iss_tracker',
+        image: require('../assets/images/iss_tracker/thumbnail.jpg'),
+        webp: require('../assets/images/iss_tracker/thumbnail.webp')
+      },
       caseStudies: [
         {
           type: 'Marketing Website',
           title: 'Manifest',
           description: 'A frictionless way to transfer retirement accounts',
-          image: require('../assets/images/manifest/manifest_thumbnail.png'),
+          image: require('../assets/images/manifest/thumbnail.png'),
+          webp: require('../assets/images/manifest/thumbnail.webp'),
           tags: ['Jekyll', 'SCSS', 'Team Project'],
           path: '/manifest',
           reverse: true
@@ -78,7 +87,8 @@ export default {
           type: 'Web App',
           title: 'Countdown Timer',
           description: 'A beautiful way to view a range of countdown timers',
-          image: require('../assets/images/tik-it/TIKIT_thumbnail.jpg'),
+          image: require('../assets/images/tik-it/thumbnail.jpg'),
+          webp: require('../assets/images/tik-it/thumbnail.webp'),
           tags: ['Vue', 'SCSS', 'ES6'],
           path: '/tikit',
           link: 'https://tik-it.netlify.app/'
@@ -88,16 +98,19 @@ export default {
         {
           title: 'Text Adventure Game',
           image: require('../assets/images/textAdventure__thumb.jpg'),
+          webp: require('../assets/images/textAdventure__thumb.webp'),
           link: 'https://textadventure.netlify.app/'
         },
         {
           title: 'Manifest Website',
-          image: require('../assets/images/manifest/manifest_thumbnail.png'),
+          image: require('../assets/images/manifest/thumbnail.png'),
+          webp: require('../assets/images/manifest/thumbnail.webp'),
           link: 'https://www.manifestledger.com/'
         },
         {
           title: 'Travel Journal',
           image: require('../assets/images/ecuador.jpg'),
+          webp: require('../assets/images/ecuador.webp'),
           link: 'https://www.manifestledger.com/'
         }
       ],
@@ -126,6 +139,7 @@ export default {
         title: 'Hello, World 🌎!',
         subTitle: 'I’m a front end developer from Chicago',
         image: require('../assets/images/profile.png'),
+        webp: require('../assets/images/profile.webp'),
         bio: [
           `Ever since a young age, I’ve been interested intechnology and design. From growing up with the internet, building countless projects and constantly having an urge to create anything, purposeful design has been important to me. Ultimately, this fascination with creativity and design has led me to find web development the perfect landscape to extend mypassion towards building interactive and intuitive web experiences.`,
           `Along with development, I am very active in the developer community online and in local Chicago Meetups. IN, amongst others, build up and motivate other like minded individuals, document our progress and learn the latest technologies with developers globally! Currently, I am studying Web Development and Design at Columbia College Chicago.`

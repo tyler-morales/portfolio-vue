@@ -6,7 +6,10 @@
         class="img-hover-zoom img-hover-zoom--colorize"
         target="_blank"
       >
-        <img :src="notableProject.image" alt="" />
+        <picture loading="lazy">
+          <source type="image/webp" :srcset="notableProject.webp" />
+          <img :src="notableProject.image" />
+        </picture>
       </a>
       <external-link-icon
         size="1.25x"
