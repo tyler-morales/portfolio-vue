@@ -1,6 +1,6 @@
 <template>
   <div class="fact">
-    <img :src="fact.image" alt="" class="fact--icon" />
+    <img :src="fact.image" class="fact--icon" :alt="fact.title" />
     <h4>{{ fact.title }}</h4>
     <p>{{ fact.description }}</p>
     <div class="fact__tags">

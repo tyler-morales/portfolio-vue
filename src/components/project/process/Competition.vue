@@ -13,7 +13,7 @@
         <p>{{ competitor.description }}</p>
         <picture>
           <source type="image/webp" :srcset="competitor.webp" />
-          <img :src="competitor.image" />
+          <img :src="competitor.image" :alt="competitor.name" />
         </picture>
         <figcaption>
           <a target="_blank" rel="noopener" :href="competitor.link">{{

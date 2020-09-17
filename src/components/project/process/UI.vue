@@ -3,7 +3,7 @@
     <h3>Design System</h3>
     <div v-for="(img, index) in ui" :key="index">
       <div>
-        <img :src="img.image" alt="" />
+        <img :src="img.image" alt="UI Design" />
         <h5>{{ img.description }}</h5>
       </div>
     </div>

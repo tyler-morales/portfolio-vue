@@ -5,7 +5,7 @@
         <span>{{ screen.description }}</span>
         <picture @click="showSingle(screen.webp)">
           <source type="image/webp" :srcset="screen.webp" />
-          <img :src="screen.image" />
+          <img :src="screen.image" :alt="screen.description" />
         </picture>
       </div>
     </div>

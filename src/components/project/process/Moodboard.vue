@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3>Moodboard</h3>
-    <img :src="moodboard.image" alt="" />
+    <img :src="moodboard.image" alt="moodboard" />
     <h5>{{ moodboard.description }}</h5>
   </div>
 </template>

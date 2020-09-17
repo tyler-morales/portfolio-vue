@@ -9,7 +9,7 @@
       >
         <img
           :src="`https://cdn.svgporn.com/logos/${technology.logo}.svg`"
-          alt=""
+          :alt="technology.name"
         />
         <span class="name">{{ technology.name }}</span>
       </ul>
