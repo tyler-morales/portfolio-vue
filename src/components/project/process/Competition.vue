@@ -16,7 +16,9 @@
           <img :src="competitor.image" />
         </picture>
         <figcaption>
-          <a target="_blank" :href="competitor.link">{{ competitor.name }}</a>
+          <a target="_blank" rel="noopener" :href="competitor.link">{{
+            competitor.name
+          }}</a>
         </figcaption>
         <h6>Key Insights</h6>
         <ul class="tags">

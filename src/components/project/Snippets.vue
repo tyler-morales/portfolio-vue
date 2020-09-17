@@ -7,7 +7,9 @@
         <li class="title">{{ snippet.name }}</li>
         <li v-for="(item, index) in snippet.items" :key="index">
           <span v-if="!snippet.link">{{ item }}</span>
-          <a v-else target="_blank" :href="item.link">{{ item.name }}</a>
+          <a v-else target="_blank" rel="noopener" :href="item.link">{{
+            item.name
+          }}</a>
         </li>
       </ul>
     </div>

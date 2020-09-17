@@ -5,6 +5,7 @@
         :href="notableProject.link"
         class="img-hover-zoom img-hover-zoom--colorize"
         target="_blank"
+        rel="noopener"
       >
         <picture loading="lazy">
           <source type="image/webp" :srcset="notableProject.webp" />

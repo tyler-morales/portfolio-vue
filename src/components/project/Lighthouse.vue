@@ -24,7 +24,11 @@
         <span>{{ score.name }} {{ score.icon }}</span>
       </div>
     </div>
-    <a class="link--report " target="_blank" :href="results.lighthouseReport"
+    <a
+      class="link--report "
+      target="_blank"
+      rel="noopener"
+      :href="results.lighthouseReport"
       >Generate Detailed Report</a
     >
   </div>
