@@ -25,9 +25,6 @@
       <!-- DISCOVERY -->
       <Discovery :discovery="discovery" :objectives="objectives" />
 
-      <!-- STRATEGY -->
-      <Strategy :strategy="strategy" />
-
       <!-- DEV -->
       <Dev :dev="dev" :technologies="technologies" :features="features" />
 
@@ -52,7 +49,6 @@ import Situation from '@/components/project/Situation'
 import Solution from '@/components/project/Solution'
 import TheProcess from '@/components/project/process/TheProcess'
 import Discovery from '@/components/project/process/Discovery'
-import Strategy from '@/components/project/process/Strategy'
 import Dev from '@/components/project/process/Dev'
 import Results from '@/components/project/Results'
 import Summary from '@/components/project/Summary'
@@ -68,7 +64,6 @@ export default {
     Solution,
     TheProcess,
     Discovery,
-    Strategy,
     Dev,
     Results,
     Summary,
@@ -157,10 +152,6 @@ export default {
           'Use common classes to refactor code',
           'Build new elements from scratch'
         ]
-      },
-      strategy: {
-        description:
-          'After general research and objective analysis, I began playing around with how content would fit together and interact. I cemented the metrics I wanted to include and then arranged how they should interact with each other.'
       },
       dev: {
         description:
