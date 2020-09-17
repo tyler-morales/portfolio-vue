@@ -8,17 +8,20 @@
       :perView="perView"
       :peek="peek"
     >
-      <vue-glide-slide
-        :style="{ background: card.background }"
-        v-for="(card, index) in competition"
-        :key="index"
-      >
-        <h4>{{ card.name }}</h4>
-        <p>{{ card.description }}</p>
-        <img :src="card.image" />
+      <vue-glide-slide v-for="(competitor, index) in competition" :key="index">
+        <h4>{{ competitor.name }}</h4>
+        <p>{{ competitor.description }}</p>
+        <img :src="competitor.image" />
+        <figcaption>
+          <a target="_blank" :href="competitor.link">{{ competitor.name }}</a>
+        </figcaption>
         <h6>Key Insights</h6>
         <ul class="tags">
-          <li class="tag" v-for="(tag, index) in card.keyFeatures" :key="index">
+          <li
+            class="tag"
+            v-for="(tag, index) in competitor.keyFeatures"
+            :key="index"
+          >
             {{ tag }}
           </li>
         </ul>
@@ -42,11 +45,6 @@ export default {
   },
   data() {
     return {
-      cards: [
-        { background: '#00659d' },
-        { background: '#00abbc' },
-        { background: '#e2c58a' }
-      ],
       gap: 30,
       perView: 2,
       breakpoints: {
@@ -87,10 +85,16 @@ export default {
     padding: 20px;
     border-radius: 15px;
     border: 2px solid black;
+    height: auto;
 
     h4 {
       font-weight: 500;
       text-align: center;
+    }
+
+    p {
+      height: auto;
+      min-height: 156px;
     }
 
     img {

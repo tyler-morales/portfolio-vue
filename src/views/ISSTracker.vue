@@ -178,25 +178,33 @@ export default {
       },
       competition: [
         {
-          name: 'abc Company',
+          name: 'N2YO',
           description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dicta libero minus non eum accusantium.',
-          keyFeatures: ['Clean UI', 'Good UX', 'Unresponsive'],
-          image: 'https://picsum.photos/id/737/300/200'
+            'While comprehensive in metrics about the ISS, it lacks a visual pressence that entices and helps the user decipher the numbers.',
+          link: 'https://www.n2yo.com/?s=25544',
+          keyFeatures: [
+            'Outdated UI',
+            'Comprehensive metrics',
+            'Info overload'
+          ],
+          image: require('../assets/images/iss_tracker/competition/ny2o.jpg')
         },
         {
-          name: 'abc Company',
+          name: 'European Space Agency',
           description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dicta libero minus non eum accusantium.',
-          keyFeatures: ['Clean UI', 'Good UX', 'Unresponsive'],
-          image: 'https://picsum.photos/id/927/300/200'
+            'More of a widget than web app, this is a slow and unresponsive application that seems to have very little attention for users.',
+          link:
+            'https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/International_Space_Station/Where_is_the_International_Space_Station',
+          keyFeatures: ['Outdated UI', 'Very slow', 'A widget'],
+          image: require('../assets/images/iss_tracker/competition/esa.jpg')
         },
         {
-          name: 'abc Company',
+          name: 'ISS Tracker',
           description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dicta libero minus non eum accusantium.',
-          keyFeatures: ['Clean UI', 'Good UX', 'Unresponsive'],
-          image: 'https://picsum.photos/id/893/300/200'
+            'Placing the metrics around the perimeter of the web app, it is difficult to get a quick glance of the most important information.',
+          link: 'http://www.isstracker.com/',
+          keyFeatures: ['Outdated UI', 'Good UX', 'Feature rich'],
+          image: require('../assets/images/iss_tracker/competition/isstracker.jpg')
         }
       ],
       strategy: {
