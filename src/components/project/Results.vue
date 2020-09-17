@@ -4,7 +4,7 @@
     <h3>Letting the Results Speak for Themselves</h3>
     <picture>
       <source type="image/webp" :srcset="results.webp" />
-      <img :src="results.image" alt="Results" />
+      <img v-if="results.image" :src="results.image" alt="Results" />
     </picture>
     <Screens :screens="screens" />
     <Lighthouse :lighthouse="lighthouse" :results="results" />
