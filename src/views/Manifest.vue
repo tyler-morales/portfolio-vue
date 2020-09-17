@@ -125,7 +125,7 @@ export default {
       },
       process: {
         description:
-          'This project required the help of designer (Sanjana _____) and CEO (Anurrag Tripath). I began this project through talking with both Sanjana and Anurrag about the current state of the website. From there, Sanjana and I would go back and fourth between her design mockups in Figma and the result I created. Once the site matched her designs and worked functionally both in terms of responsiveness and form submission, I then worked with Anurrag in migrating the current repo to a Manifest specfic repo on Github.'
+          'This project required the help of designer (Sanjana Mehra) and CEO (Anuraag Tripathi). I began this project through talking with both Sanjana and Anuraag about the current state of the website. From there, Sanjana and I would go back and fourth between her design mockups in Figma and the result I created. Once the site matched her designs and worked functionally both in terms of responsiveness and form submission, I then worked with Anuraag in migrating the current repo to a Manifest specfic repo on Github.'
       },
       scope: [
         {
