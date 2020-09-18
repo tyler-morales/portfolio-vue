@@ -13,7 +13,7 @@ const routes = [
   {
     path: '/isstracker',
     name: 'IssTracker',
-    component: () => import('../views/IssTracker.vue')
+    component: () => import('../views/ISSTracker.vue')
   },
   {
     path: '/manifest',
