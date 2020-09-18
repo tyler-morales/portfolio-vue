@@ -4,14 +4,15 @@ import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
-const routes = [{
+const routes = [
+  {
     path: '/',
     name: 'Home',
     component: Home
   },
   {
     path: '/isstracker',
-    name: 'ISSTracker',
+    name: 'IssTracker',
     component: () => import('../views/IssTracker.vue')
   },
   {
