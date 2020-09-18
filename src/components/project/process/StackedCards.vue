@@ -6,7 +6,7 @@
         <h3 class="card-item__text--heading">Information Architecture</h3>
         <p>{{ strategy.infoArc.description }}</p>
       </div>
-      <img :src="strategy.infoArc.image" :alt="Strategy" />
+      <img :src="strategy.infoArc.image" alt="Strategy" />
     </section>
 
     <section class="card-item">
@@ -14,7 +14,7 @@
         <h3 class="card-item__text--heading">Information Design</h3>
         <p>{{ strategy.interaction.description }}</p>
       </div>
-      <img :src="strategy.interaction.image" :alt="Strategy" />
+      <img :src="strategy.interaction.image" alt="Strategy" />
     </section>
   </div>
 </template>
