@@ -86,10 +86,10 @@ export default {
   data() {
     return {
       hero: {
-        title: 'International Space Station Tracker',
-        subTitle: 'A real time satellite tracker',
-        image: require('../assets/images/iss_tracker/banner.jpg'),
-        webp: require('../assets/images/iss_tracker/banner.webp')
+        title: `Tik'it`,
+        subTitle: 'A beautiful way to view a range of countdown timers',
+        image: require('../assets/images/tik-it/banner.jpg'),
+        webp: require('../assets/images/tik-it/banner.webp')
       },
       intro: {
         title: 'Making the Boring Interesting',
@@ -114,11 +114,11 @@ export default {
           items: [
             {
               name: 'Github',
-              link: 'https://github.com/tyler-morales/iss'
+              link: 'https://github.com/tyler-morales/tik-it'
             },
             {
               name: 'Live Site',
-              link: 'https://theisstracker.netlify.app/'
+              link: 'https://tik-it.netlify.app/'
             }
           ]
         }
