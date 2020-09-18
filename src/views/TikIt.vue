@@ -92,17 +92,17 @@ export default {
         webp: require('../assets/images/tik-it/banner.webp')
       },
       intro: {
-        title: 'Making the Boring Interesting',
-        description: `After scouring the web for interesting project ideas, I came across an API that tracks the ISS. The current state of ISS tracker online lack any visual modernity. Being a designer and developer, I decided to create a visual interesting representation of where the ISS is located at all times.`
+        title: 'Never Miss Imnportant Events',
+        description: `In trying to build my first Vue Web app, I decided to combine a few ideas I had learned– todo lists and countdown timers. While these ideas seem simple, I wanted to create something that had more substance. This web app alows users to create, view and update their custom events, like birthdays, and view national holidays.`
       },
       snippets: [
         {
           name: 'Tech Stack 📚',
-          items: ['HTML', 'SCSS', 'ES6']
+          items: ['Vue', 'Firebase', 'SCSS', 'ES6', 'HTML5']
         },
         {
           name: 'What I Learned ✏️',
-          items: ['API Intergration', 'Fetch API', 'HTML Data Themes']
+          items: ['Vue', 'Sorting/ Filtering', 'Handling user input']
         },
         {
           name: 'Project Type ☕️',
@@ -125,17 +125,16 @@ export default {
       ],
       situation: {
         description:
-          'Transform a standard satilate tracker from an early 2000s website to a modern 2020 web app',
+          'Create a hub to remind and make important events exciting',
         org: '– Tyler Morales'
       },
       solution: {
-        title: 'Upgrading Design, Usability and Enjoyment',
-        description:
-          'The main goal of this project is to take in data from an API, and transform that data into a beautiful and exicting tool for people interested or who have no idea what or where the International Space Statio is fun to view. Through modernizing the design and implementing the latest Front End features such as the Fetch API & Flexbox and CSS Grid, the web app will be future proof on both fronts'
+        title: 'Attention to Interface and Usability',
+        description: `The already existing websites that track holidays or allow users to create their own countdown events lack an inviting and modern user interface. While form doesn't keep users around, functionality does, and that is where I believe this web app shines. It allows users to create a hub for life's most important events! `
       },
       process: {
         description:
-          'Each project demands a differnt tatic for a succesful final product. For this project, I wanted to reimagine what a satalite tracker could be. In order to accomplish that, I started the design phase not in mockups, layouts or color patterns, but rather the reassoning and strategy behind how the user would use this tool. From there, I was better able to design and develop a production grade web app. It is important to keep in mind that these steps are not stricly linear in production. Due to the iterative design and development process, oftentimes I will go back and rethink or design key features'
+          'This project required the entire process from design thinking to back end development. I really wanted to push myself in terms of the technologies used. Because of this, took my time to ensure the design, user interactions and development were up to standards. Additonally, because of this being a larger project, the project steps were not 100% linear in nature, but fluid.'
       },
       scope: [
         {
@@ -159,11 +158,15 @@ export default {
         {
           phaseName: 'Development',
           code: true,
-          responsibilities: ['Frontend Development', 'API Intergration']
+          responsibilities: [
+            'Frontend Development',
+            'Backend Development',
+            'SEO'
+          ]
         }
       ],
       discovery: {
-        description: `To begin, I started finding the current problems facing existing satalite trackers and defining solutions to them. I came up with my solutions through both general research about what the ISS is and existing ISS trackers.`
+        description: `To begin, I started to look around what websites already existed. This influenced what I wanted to include and not included. Additionally, I found some design inspiration from dribble that really inspired me to make this web app in the first place.`
       },
       objectives: {
         goals: [
