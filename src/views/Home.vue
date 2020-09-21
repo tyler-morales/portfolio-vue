@@ -184,7 +184,7 @@ export default {
     display: grid;
     gap: 150px;
     padding: 100px 0;
-    background-color: var(--white);
+    background-color: var(--foreground-color);
 
     @include breakpoint(sm) {
       margin-top: 80px;
@@ -198,7 +198,7 @@ export default {
 
   .notable-projects {
     justify-content: center;
-    background-color: var(--white);
+    background-color: var(--foreground-color);
     margin: 100px;
     padding: 100px;
     text-align: center;
@@ -251,7 +251,7 @@ export default {
     }
 
     @include breakpoint(sm) {
-      background-color: #fff;
+      background-color: var(--foreground-color);
     }
   }
 

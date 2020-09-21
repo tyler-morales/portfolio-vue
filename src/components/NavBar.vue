@@ -75,6 +75,7 @@ export default {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    color: var(--white);
 
     @include breakpoint(sm) {
       min-width: 300px;

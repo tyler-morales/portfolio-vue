@@ -107,7 +107,7 @@ export default {
   }
 
   & > * {
-    background-color: var(--white);
+    background-color: var(--foreground-color);
     padding: 44px;
     display: inline-block;
     margin: 30px auto;

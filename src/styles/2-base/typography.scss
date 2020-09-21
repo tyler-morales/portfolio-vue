@@ -13,10 +13,18 @@ figcaption,
 button,
 a {
   font-family: var(--font-ibm);
+  // color: var(--body-color);
 }
 
 figcaption>a {
   font-size: 15px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--heading-color);
 }
 
 h1 {

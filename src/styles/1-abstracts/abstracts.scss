@@ -7,9 +7,29 @@ $semi-light: 90%;
 
 :root {
   //colors
+  --color-primary: #414141;
+  --color-secondary: #1d04f7;
+  --color-tertiary: #66bb6a;
+  --color-offwhite: #F5F5F7;
+
+  --color-blue: #2D91D9;
+  --color-dark-blue: #1F242A;
+  --color-lighter-blue: #353d47;
+  --color-tortoise: #9CAEC8;
+
   --white: #fff;
   --black: #242424;
-  --bg-color: #F5F5F7;
+
+  // light mode ☀️
+  --body-color: var(--black);
+  --bg-color: var(--color-offwhite);
+  --foreground-color: var(--white);
+
+  // Dark mode 🌑
+  // --heading-color: var(--color-blue);
+  // --body-color: #D8E1E7;
+  // --bg-color: var(--color-dark-blue);
+  // --foreground-color: var(--color-lighter-blue);
 
   // shadows
   --shadow-light: 4px 12px 40px 6px rgba(0, 0, 0, .04);
