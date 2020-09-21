@@ -101,10 +101,10 @@ export default {
           link: 'https://textadventure.netlify.app/'
         },
         {
-          title: 'Manifest Website',
-          image: require('../assets/images/manifest/thumbnail.png'),
-          webp: require('../assets/images/manifest/thumbnail.webp'),
-          link: 'https://www.manifestledger.com/'
+          title: 'New Tab Extension',
+          image: require('../assets/images/newtab-thumb.jpg'),
+          webp: require('../assets/images/newtab-thumb.webp'),
+          link: 'https://beautiful-tab.netlify.app/'
         },
         {
           title: 'Travel Journal',
