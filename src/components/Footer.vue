@@ -5,9 +5,9 @@
       <span>Codes</span>
     </router-link>
     <div class="links">
-      <router-link to="/#projects">Projects</router-link>
-      <router-link to="/#about">About</router-link>
-      <a href="mailto:moratyle@gmail.com">Contact</a>
+      <router-link class="btn--underline" to="/#projects">Projects</router-link>
+      <router-link class="btn--underline" to="/#about">About</router-link>
+      <a class="btn--underline" href="mailto:moratyle@gmail.com">Contact</a>
     </div>
   </footer>
 </template>
@@ -44,8 +44,6 @@ footer {
   }
 
   @include breakpoint(md) {
-    // padding: 50px;
-    // margin: 0 auto;
     max-width: 90vw;
   }
 

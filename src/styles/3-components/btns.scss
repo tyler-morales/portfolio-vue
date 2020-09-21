@@ -18,4 +18,31 @@
       color: var(--white);
     }
   }
+
+  &--underline {
+    @extend .btn;
+    padding: 8px 15px;
+    border: 0px;
+    background: transparent;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      border-radius: inherit;
+      width: 0;
+      height: 2px;
+      background: #000;
+      left: 0px;
+      bottom: 0px;
+      z-index: -1;
+      transition: all 0.25s ease;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
 }
