@@ -110,7 +110,7 @@ export default {
           title: 'Travel Journal',
           image: require('../assets/images/ecuador.jpg'),
           webp: require('../assets/images/ecuador.webp'),
-          link: 'https://www.manifestledger.com/'
+          link: 'https://happy-mclean-3b49d7.netlify.app/'
         }
       ],
       facts: [
