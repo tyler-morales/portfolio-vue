@@ -3,7 +3,7 @@
     <h3>Like what you see?</h3>
     <div class="giphy">
       <iframe
-        src="https://giphy.com/embed/xT9IgzUuC5Ss6ZnTEs"
+        src="https://giphy.com/embed/3o6Mbfsf4DI4Cds5Ms"
         frameBorder="0"
         class="giphy-embed"
       ></iframe>
@@ -11,7 +11,6 @@
     <a href="mailto:moratyle@gmail.com" class="btn--cta">Let's Talk!</a>
   </section>
 </template>
-
 <script>
 export default {}
 </script>
