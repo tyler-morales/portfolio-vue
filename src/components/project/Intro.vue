@@ -18,7 +18,7 @@ export default {
 
 <style lang="scss" scoped>
 .intro {
-  max-width: 800px;
+  max-width: 830px;
   text-align: center;
   margin: 0 auto;
 

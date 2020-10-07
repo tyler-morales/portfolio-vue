@@ -79,7 +79,7 @@ export default {
       },
       intro: {
         title: 'Maximizing Retirement Outcomes',
-        description: `Manifest is a small FinTech company based in Hyde Park, IL. It helps manage retirement accounts as people switch between jobs and makes that process streamline and easy. I was tasked with updating their current website to promote it's features, tell the company's story and implement a contact form.`
+        description: `Manifest is a startup FinTech company that manages retirement account transitions for clients switching jobs. Fintech executives tasked me with updating their current website with the specific goal of better communicating their mission and features. To achieve this, I implemented a modular structure with a sleek new design. Processed focused and intent driven: I applied the BEM methodology and focused on scalability and codebase maintainability.`
       },
       snippets: [
         {
@@ -257,7 +257,7 @@ export default {
         }
       ],
       summary: {
-        description: `Overall, I enjoyed working on a real project. This was a great opportunity to get a taste of Front End Development in the real world. I greatly upgraded my skills in Git/ Github, communication and development.`
+        description: `The end result was a visually appealing and easily manageable website that clearly communicated there mission and features.`
       }
     }
   }
